@@ -57,3 +57,13 @@ Do not mark DONE without evidence. Update docs/IMPLEMENTATION_LOG.md after perfo
 - [ ] Each specialist page uses distinct, relevant content.
 - [ ] No fixed fees or turnaround promises without approval.
 - [ ] Legal notices and terms receive a separate review for completeness.
+
+## Privacy and cookies (2 November 2026)
+- [ ] Consent banner appears on a fresh visit without blocking all site content.
+- [ ] Necessary-only choice is saved, and returning visitors are not prompted again within 180 days.
+- [ ] Footer and cookie policy 'Cookie settings' controls reopen the preference dialogue.
+- [ ] Settings can be opened, closed, saved and navigated by keyboard; focus returns sensibly.
+- [ ] Analytics/advertising are disabled and not loaded before consent; a future vendor needs named disclosure, renewed consent and actual technical gating.
+- [ ] Privacy, terms and cookies pages contain company identity, practical contact information and links.
+- [ ] Cloudflare dashboard has been checked for automatic Web Analytics or other externally injected scripts.
+- [ ] Review docs/COMPLIANCE.md and confirm practice-specific facts.

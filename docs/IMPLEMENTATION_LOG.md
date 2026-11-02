@@ -34,3 +34,10 @@ Pending. For each significant change, record date, files changed, reason, actual
 - Replaced generic repeated specialist/location copy with ten short, topic-specific summaries and bullets.
 - Removed compulsory-sounding first-enquiry checklists and avoided unverified promises about fees or deadlines.
 - Updated agent guidance. The legal pages still require an independent compliance review.
+
+## UK privacy and cookie compliance revision — 2 November 2026
+- Expanded the privacy notice for controller identity, purposes, Article 6 bases, Article 9 legal claims, sources, recipients, storage, overseas transfers, retention criteria, data rights, objections and the DUAA 2025 organisational complaints process.
+- Added general engagement terms: acceptance, expert independence, case records, assessments, written fees and payment, cancellation, confidentiality and report limitations, without inventing a contract.
+- Added a complete cookie preference UI, persistent necessary-choice record, settings dialog, necessary/analytics/advertising categories, re-open buttons and no pre-consent tracking.
+- Current site intentionally has no analytics/advertising integrations; those categories are disabled. See docs/COMPLIANCE.md before installing third-party scripts.
+- Practice-specific records/providers/retention/contract terms must be verified against actual operations; code cannot certify them.

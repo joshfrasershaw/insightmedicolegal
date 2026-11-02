@@ -2,19 +2,73 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { site } from '../data/site';
 ---
-<BaseLayout title="Privacy policy | Insight Medicolegal" description="How Insight Medicolegal uses personal information.">
+<BaseLayout title="Privacy notice | Insight Medicolegal" description="How Insight Medicolegal Ltd handles enquiries, psychiatric assessments and medico-legal records.">
   <section class="inner-page">
-    <div class="container legal-content">
-      <h1>Privacy policy</h1>
-      <p class="page-lead">How we use the information you give us.</p>
-      <h2>Who we are</h2>
-      <p>Insight Medicolegal Ltd is registered in Scotland (SC822243) and with the Information Commissioner's Office (ZB830807).</p>
-      <h2>What we use your information for</h2>
-      <p>We use contact information to reply to enquiries. Information supplied for a report is used to carry out that work.</p>
-      <h2>Medical records</h2>
-      <p>Don't send medical records until you've agreed a secure way to send them.</p>
-      <h2>Questions about your information?</h2>
-      <p>Email <a href={'mailto:' + site.email}>{site.email}</a>.</p>
+    <div class="container legal-content privacy-notice">
+      <h1>Privacy notice</h1>
+      <p class="page-lead">What information we collect, why we need it, and your rights.</p>
+      <p class="small-print">Updated 2 November 2026.</p>
+
+      <h2>Who is responsible for your information?</h2>
+      <p><strong>{site.legalName}</strong> is the data controller for its own enquiries and independent medico-legal work. Registered in Scotland, company number {site.companyNumber}; ICO registration ZB830807.</p>
+      <p>Registered office: {site.registeredOffice}.</p>
+      <p>For privacy questions or requests: <a href={'mailto:' + site.email}>{site.email}</a> or <a href={site.phoneHref}>{site.phone}</a>.</p>
+
+      <h2>Who does this notice cover?</h2>
+      <p>People contacting the practice, solicitors and other instructing organisations, people assessed for a report, and anyone whose information is relevant to an instruction.</p>
+
+      <h2>What information do we use?</h2>
+      <ul>
+        <li>Names, contact details, organisations and correspondence about enquiries.</li>
+        <li>Letters of instruction, case documents and other information sent by solicitors, insurers, regulators or other authorised parties.</li>
+        <li>Medical and mental health records, employment or social care records, assessment notes and information needed for an expert report.</li>
+        <li>Reports, invoices and related administrative records.</li>
+        <li>Basic website request information, such as IP address, browser details and security logs, handled by the website host.</li>
+      </ul>
+      <p>Information may come from you, the person or organisation instructing Dr Qureshi, the records provided for a case, and other people or organisations involved in that case. If records include information about other people, only information relevant to the work should be supplied.</p>
+
+      <h2>Why do we use it?</h2>
+      <table class="legal-table">
+        <thead><tr><th scope="col">Reason</th><th scope="col">Legal basis under UK GDPR</th></tr></thead>
+        <tbody>
+          <tr><td>Reply to enquiries, check whether a case can be accepted, and arrange work.</td><td>Legitimate interests (Article 6(1)(f)): running the practice and responding to professional enquiries.</td></tr>
+          <tr><td>Assess evidence, prepare reports and respond to questions about an accepted case.</td><td>Legitimate interests (Article 6(1)(f)): providing independent expert evidence to those involved in legal or professional proceedings. Contract (Article 6(1)(b)) may apply where the individual is personally a party to the agreement.</td></tr>
+          <tr><td>Keep accounts, meet professional or legal duties and respond to lawful requests.</td><td>Legal obligation (Article 6(1)(c)), where one applies; otherwise legitimate interests (Article 6(1)(f)).</td></tr>
+          <tr><td>Operate and protect this website.</td><td>Legitimate interests (Article 6(1)(f)): keeping the website available and secure.</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Health and other sensitive information</h2>
+      <p>Health information needs extra protection. Where it is necessary to prepare evidence for a legal claim, we rely on Article 9(2)(f) UK GDPR (legal claims) in addition to the relevant Article 6 basis above. This may include claims that have not yet reached court.</p>
+      <p>Other instructions, including some regulatory matters, may require a different legal condition. The practice must establish that condition before handling sensitive information for such a case. Consent to take part in an assessment is discussed separately; it is not automatically the legal basis for processing records in a case.</p>
+      <p>If a proposed instruction does not have an appropriate legal basis, it should not be accepted.</p>
+
+      <h2>Who may see the information?</h2>
+      <p>Information is shared only where necessary for the instruction or where the law requires or permits it. This may include the instructing solicitor or organisation, relevant courts or tribunals, regulators, and the people authorised to deal with the case.</p>
+      <p>Providers supporting secure email, document storage, video appointments, accounts, IT support and website hosting may also process limited information for those services. They must handle it under appropriate confidentiality and data protection arrangements.</p>
+      <p>We do not sell personal or medical information. Medical records should not be emailed to the practice until a secure method of transfer has been agreed.</p>
+
+      <h2>Keeping information secure</h2>
+      <p>The practice uses access controls and appropriate arrangements for storing and sending confidential records. No method of sending information over the internet is completely risk-free. Please check how to transfer sensitive documents before sending them.</p>
+
+      <h2>Sending information outside the UK</h2>
+      <p>Some technology providers may handle information outside the UK. Where a transfer is restricted by UK data protection law, the practice must use an applicable adequacy arrangement or another lawful safeguard, such as the UK International Data Transfer Agreement or UK Addendum. Contact us to ask about a particular provider or the safeguards used.</p>
+
+      <h2>How long is information kept?</h2>
+      <p>Records are kept only while they are needed. The period depends on the type of information, whether a case has ended, professional requirements, tax rules, potential legal claims and any duty to preserve evidence. A case file may need to be kept longer than a general enquiry.</p>
+      <p>The practice reviews records for secure deletion or destruction when there is no longer a lawful reason to keep them. You can ask about the period or criteria for a particular file. There is no single retention period that suits every case.</p>
+
+      <h2>Your rights</h2>
+      <p>You may be entitled to see information held about you, correct inaccurate details, ask for deletion or restricted use, object to processing, or obtain a copy in a portable format where the law provides for this. These rights are not absolute. Legal privilege and exemptions relating to claims or other obligations may affect what can be disclosed or deleted.</p>
+      <p><strong>You can object to processing based on legitimate interests.</strong> Write to <a href={'mailto:' + site.email}>{site.email}</a> and explain your concern. The practice will consider it under the UK GDPR.</p>
+      <p>The practice does not use solely automated decision-making to decide the findings of a psychiatric report.</p>
+
+      <h2>Complaints</h2>
+      <p>If you think personal information has been handled wrongly, email <a href={'mailto:' + site.email}>{site.email}</a> with the details. The practice must acknowledge a data protection complaint within 30 days, look into it without undue delay and tell you the outcome.</p>
+      <p>You can also complain to the <a href="https://ico.org.uk/make-a-complaint/" rel="noopener noreferrer">Information Commissioner's Office (ICO)</a>, the UK data protection regulator. Its telephone number is 0303 123 1113.</p>
+
+      <h2>Website cookies and storage</h2>
+      <p>See our <a href="/cookie-policy">cookie policy</a> for necessary site storage, external image requests and how to change cookie settings.</p>
     </div>
   </section>
 </BaseLayout>

@@ -1,15 +1,45 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
 ---
-<BaseLayout title="Terms of engagement | Insight Medicolegal" description="Terms for psychiatric expert reports.">
+<BaseLayout title="Terms of engagement | Insight Medicolegal" description="How psychiatric expert witness instructions are considered and agreed.">
   <section class="inner-page">
     <div class="container legal-content">
       <h1>Terms of engagement</h1>
-      <p class="page-lead">Asking about a report does not mean you've instructed Dr Qureshi.</p>
-      <h2>Before work starts</h2>
-      <p>Fees, timing and the work involved are agreed before an instruction is accepted.</p>
-      <p>Dr Qureshi gives his own independent medical opinion.</p>
-      <a class="button button-dark" href="/contact">Ask about a report ↗</a>
+      <p class="page-lead">How a psychiatric expert report is arranged.</p>
+      <p class="small-print">Updated 2 November 2026.</p>
+      <p>This page explains the usual approach to instructions. <strong>It is not a quotation or a contract on its own.</strong> The written terms agreed for each case set out the work, fees, payment terms and any cancellation or court attendance charges. If agreed written terms differ from this general information, the written terms apply.</p>
+
+      <h2>1. Making an enquiry</h2>
+      <p>Email or call with a brief outline of the case. You do not need to send a full records bundle to ask whether Dr Qureshi may be able to help. A deadline is useful if you have one.</p>
+      <p>No instruction is accepted merely because an enquiry or documents have been sent.</p>
+
+      <h2>2. Accepting a case</h2>
+      <p>Before accepting an instruction, Dr Qureshi considers whether the subject falls within his expertise, whether he is available and whether there is a conflict of interest. He may decline a case. The instructing party and the practice agree the work in writing before it starts.</p>
+
+      <h2>3. Independent opinion</h2>
+      <p>Dr Qureshi's duty as an expert is to give his own impartial opinion. Where an expert owes a duty to a court or tribunal, that duty takes priority over the interests of whoever instructed or pays him. A report may contain findings that do not support the instructing party's case.</p>
+
+      <h2>4. Records and assessments</h2>
+      <p>The instructing party is responsible for providing relevant records, questions and any deadlines agreed for the case. Additional information may be requested if needed. If important records are missing, the report may explain what cannot be concluded or need to be updated.</p>
+      <p>An assessment is arranged if appropriate. Its purpose is to prepare an expert opinion, not to provide ongoing treatment. The person being assessed will be told how their information and report may be used. Do not send sensitive records until a secure transfer method has been agreed.</p>
+
+      <h2>5. Fees and payment</h2>
+      <p>Fees and payment dates are agreed in writing before work begins. They may depend on the records, assessment, report and any further work requested. No price or reporting time is guaranteed by this website.</p>
+      <p>Who must pay, whether VAT is chargeable and the terms for any additional work are confirmed in the written agreement. The result of a case does not determine the content of the report.</p>
+
+      <h2>6. Changes, cancellations and court attendance</h2>
+      <p>If a case changes, is delayed or is cancelled, contact the practice as early as possible. Any fees for work already completed, cancelled appointments, reserved court time, supplementary reports or attendance at court must be those agreed in writing for the case. No general cancellation charge is imposed by this page.</p>
+
+      <h2>7. Confidentiality and disclosure</h2>
+      <p>Records and reports are handled in line with the <a href="/privacy-policy">privacy notice</a> and applicable professional duties. Reports are prepared for the agreed instruction and are normally provided to the instructing party. A court order, legal requirement or serious safeguarding concern may require different handling.</p>
+
+      <h2>8. The limits of a report</h2>
+      <p>An opinion is based on the material available at the time. New records or a change in circumstances may call for further work. The report is not a guarantee of any legal outcome or a substitute for medical treatment. Any further reports or hearings require agreement.</p>
+
+      <h2>Questions?</h2>
+      <p>Contact <a href={'mailto:' + site.email}>{site.email}</a> or <a href={site.phoneHref}>{site.phone}</a> before sending an instruction.</p>
+      <a class="button button-dark" href="/contact">Contact the practice ↗</a>
     </div>
   </section>
 </BaseLayout>
