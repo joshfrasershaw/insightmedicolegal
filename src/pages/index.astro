@@ -1,20 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import HomeHero from '../components/HomeHero.astro';
+import HomeProfile from '../components/HomeProfile.astro';
+import HomeExpertise from '../components/HomeExpertise.astro';
+import HomeProcess from '../components/HomeProcess.astro';
+import HomeFaq from '../components/HomeFaq.astro';
+import ContactBanner from '../components/ContactBanner.astro';
 ---
-<BaseLayout
-  title="Insight Medicolegal | Independent Psychiatric Expert Witness | Glasgow"
-  description="Independent psychiatric expert witness reports by Dr Yameen Qureshi, Consultant Psychiatrist in Glasgow."
->
-  <!-- IMPLEMENTATION STATUS: visual reference starter only; Codex must build all sections in CODEX_TASK.md. -->
-  <section class="home-hero" aria-labelledby="home-title">
-    <div class="hero-content">
-      <h1 id="home-title">Clear psychiatric opinion for legal decisions.</h1>
-      <p>Dr Yameen Qureshi · Consultant Psychiatrist and Independent Expert Witness. Clear, independent psychiatric opinion for legal, insurance and regulatory proceedings.</p>
-      <a class="button button-dark" href="/instructions">Discuss an instruction ↗</a>
-    </div>
-  </section>
-  <section class="expertise-strip" aria-label="Psychiatric expertise">
-    <p>PTSD · Depression · Anxiety disorders · Personality disorders · Fitness to plead</p>
-    <a href="/areas-of-expertise">View all areas ↗</a>
-  </section>
+<BaseLayout title="Insight Medicolegal | Independent Psychiatric Expert Witness | Glasgow" description="Independent psychiatric expert witness reports by Dr Yameen Qureshi, Consultant Psychiatrist in Glasgow.">
+<HomeHero/><HomeProfile/><HomeExpertise/><HomeProcess/><HomeFaq/><ContactBanner/>
 </BaseLayout>
