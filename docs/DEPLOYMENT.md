@@ -1,44 +1,56 @@
-# Cloudflare Pages deployment — Git-backed Astro static site
+# Cloudflare Workers deployment — static Astro
 
-This new repository is intended for a static Astro build on Cloudflare Pages.
+The Cloudflare project associated with this repository is a **Worker** named `insightmedicolegal`, not a Pages project. The site is fully static: no SSR or Astro Cloudflare adapter required.
 
-## Requirements
-- Node 24 (repo .nvmrc)
-- npm (generate and COMMIT package-lock.json during the implementation)
-- No API/server required for the informational site
-- Production output directory: dist
+## Why the first deployment failed
+On 2 November 2026, `npm run build` succeeded and generated `dist/`. Then `npx wrangler deploy` ran without a Wrangler configuration file, detected Astro and attempted automatic `astro add cloudflare` setup. That process failed with `Missing file or directory: public/.assetsignore`. This is an unnecessary auto-configuration path for a static Astro website.
+
+The fix is the committed [wrangler.jsonc](../wrangler.jsonc):
+
+```json
+{
+  "name": "insightmedicolegal",
+  "compatibility_date": "2026-11-02",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  }
+}
+```
+
+Wrangler reads that config and directly uploads `dist/` as static Worker assets. **Do not run `astro add cloudflare` for this project unless deliberately switching to SSR.** The custom `src/pages/404.astro` generates the required 404 page.
+
+## Cloudflare settings
+- Project type: Workers / Workers Builds with Git integration.
+- Worker name: `insightmedicolegal`.
+- Repository: `joshfrasershaw/insightmedicolegal`.
+- Production branch: `main` (only approved releases).
+- Node version: 24.
+- Build command: `npm run build` (Bun can install dependencies in the environment).
+- Deploy command: `npx wrangler deploy`.
+- Assets directory: `./dist` (specified in `wrangler.jsonc`).
+- Root directory: repository root.
 
 ## Local
-~~~bash
+```bash
 npm install
-npm run dev
 npm run check
 npm run build
 npm run preview
-~~~
+npm run preview:cloudflare
+```
 
-## Connect to Cloudflare Pages
-1. Cloudflare dashboard > Workers & Pages > Create application > Pages.
-2. Import the GitHub repository joshfrasershaw/insightmedicolegal.
-3. Set production branch main.
-4. Framework preset Astro (if asked).
-5. Build command npm run build.
-6. Output directory dist.
-7. Root directory: repository root.
-8. Node version: 24 (set NODE_VERSION=24 if the platform needs it).
-9. Create a preview build for the feature branch before merging.
-10. Verify page routing, assets, contact links and privacy/legal pages using the preview address.
+`npm run deploy` performs an Astro build followed by deployment. Only use it once you intend to deploy to the connected Cloudflare account.
 
-**Do not connect the production domain insightmedicolegal.co.uk or change DNS until the owner explicitly approves the completed replacement site.**
+## Release safeguards
+- This scaffold still only contains a homepage starter, contact starter and 404. It is NOT the completed site and should not replace the real production website yet.
+- All starter HTML pages default to `noindex,nofollow` unless `PUBLIC_SITE_READY=true` is deliberately set. This is not a substitute for restricting access; anyone with the workers.dev URL can still visit it.
+- Do not add the live custom domain or change DNS without the owner's explicit approval.
+- Before setting `PUBLIC_SITE_READY=true`, implement all 15 public content routes, legal pages, assets, and QA in [QA.md](QA.md).
+- Do not commit secrets or sensitive medical records.
+- New `package-lock.json` must be generated and committed when Codex implements the full website.
+- Cloudflare Worker Git integration may deploy when `main` changes. Treat scaffold deployment as a test only, not a production launch.
 
-Astro static output does NOT require @astrojs/cloudflare. Add it only if actual server-side functions/SSR are introduced deliberately and their deployment has been tested.
-
-## Operational safeguards
-- Never commit tokens, API keys or user medical records.
-- If introducing a contact form, choose a privacy-appropriate endpoint and implement validation/spam resistance rather than claiming email submission works when it does not. Otherwise use a working mailto link.
-- Use a consistent site URL for canonical metadata when deployed; keep preview builds nonindexed where supported.
-- Avoid 404 errors from non-existent pages; each path must have its own generated HTML file, or a verified redirect.
-
-Official guidance:
-https://developers.cloudflare.com/pages/framework-guides/deploy-an-astro-site/
-https://developers.cloudflare.com/pages/configuration/build-configuration/
+Current references:
+https://developers.cloudflare.com/workers/framework-guides/web-apps/astro/
+https://developers.cloudflare.com/workers/static-assets/

@@ -1,51 +1,44 @@
 # Insight Medicolegal
 
-**Status: Codex-ready starter, not a finished or published website.**
+**Status: Codex-ready starter, not a finished production site.**
 
-This repository is the **new, independent codebase** for recreating the current Insight Medicolegal Webflow design as a fast static website hosted on Cloudflare Pages.
+This independent repository recreates the current Insight Medicolegal Webflow design as a lightweight Astro + TypeScript website hosted on **Cloudflare Workers with static assets**.
 
 ## For Codex
+1. Read [AGENTS.md](AGENTS.md) and [CODEX_TASK.md](CODEX_TASK.md).
+2. Read the reference documentation in [docs/](docs/).
+3. Build all Webflow pages and functional links, rather than stopping at the starter homepage.
+4. Run checks, commit to the prepared `codex/webflow-rebuild` branch, and open a PR.
 
-1. Read [AGENTS.md](AGENTS.md).
-2. Read [CODEX_TASK.md](CODEX_TASK.md).
-3. Follow the supporting documentation in [docs/](docs/).
-4. Implement **all** Webflow pages, using the approved design and assets.
-5. Run checks, commit your work and provide a Cloudflare preview if your connection permits.
+The older [joshfrasershaw/insight](https://github.com/joshfrasershaw/insight) repository is a **read-only content reference**; do not edit it.
 
-Do **not** assume this repository contains the older React/TanStack website. The legacy content reference, if accessible, is a different repository: [joshfrasershaw/insight](https://github.com/joshfrasershaw/insight), which must remain untouched.
-
-## Development
-
+## Local development
 Requires Node.js 24 and npm.
 
-~~~bash
+```bash
 npm install
 npm run dev
 npm run check
 npm run build
 npm run preview
-~~~
+```
 
-This starter uses **Astro + TypeScript**, with static rendering by default. Interactive details/summary FAQs require no client-side framework.
+## Cloudflare Workers deployment
 
-## Deployment
+This project is statically generated. The committed [wrangler.jsonc](wrangler.jsonc) config tells Cloudflare to serve `./dist` directly as Worker static assets. **No Astro Cloudflare adapter or server-side Worker script is needed.**
 
-Cloudflare Pages, linked to this GitHub repository:
+- Cloudflare build command: `npm run build`
+- Cloudflare deploy command: `npx wrangler deploy`
+- Static output directory: `dist`
+- Worker name: `insightmedicolegal`
+- Local Cloudflare test: `npm run preview:cloudflare`
 
-- Production branch: main
-- Framework preset: Astro
-- Build command: npm run build
-- Build output directory: dist
-- Root directory: repository root
-- Node version: 24
-
-See [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md). **Do not connect the production domain or publish a replacement site without approval.**
+See [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md). The starter is deliberately `noindex` until explicitly approved for release. Do not attach the live custom domain or change DNS without approval.
 
 ## References
-
 - Webflow Designer: https://insightmedicolegal.design.webflow.com
-- Webflow site ID: 69d54197306f7335172bf4d8
-- Existing code/content reference (read-only): https://github.com/joshfrasershaw/insight
+- Webflow site ID: `69d54197306f7335172bf4d8`
+- Current published website design is **not** the intended Webflow visual reference.
 - Site: Insight Medicolegal — Dr Yameen Qureshi, Consultant Psychiatrist
 
-Visual fidelity, working site navigation and readable responsive typography take priority over additional SEO features.
+Visual fidelity, real source images, responsive layout and working navigation take priority over adding new SEO features.
