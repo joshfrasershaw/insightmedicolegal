@@ -19,3 +19,5 @@ jobs:
         run: npm run check
       - name: Build static site
         run: npm run build
+      - name: Check privacy and consent on built pages
+        run: npm run test:compliance

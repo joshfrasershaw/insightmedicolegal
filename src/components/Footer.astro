@@ -32,6 +32,7 @@ const legalNav = [
         <nav aria-label="Legal links">
           <h3>Legal</h3>
           {legalNav.map(item => <a href={item.href}>{item.label}</a>)}
+          <button class="site-footer__cookie-settings" type="button" data-cookie-open>Cookie settings</button>
         </nav>
       </div>
       <p class="site-footer__legal">© {new Date().getFullYear()} {site.legalName} · Registered in Scotland {site.companyNumber}<span class="site-footer__legal-break"> · </span>{site.registeredOffice}<span class="site-footer__legal-break"> · </span>GMC {site.gmc}.</p>

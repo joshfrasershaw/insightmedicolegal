@@ -33,6 +33,14 @@ Implement the complete website end-to-end: visual reproduction, every route, sha
 - Preserve the footer credit to Allerton Digital and the company's legal information.
 - Verify contrast and mobile layouts.
 
+## Privacy, terms and cookies
+- Read docs/COMPLIANCE.md before changing privacy, terms or third-party integrations.
+- No optional analytics/advertising or other non-exempt storage may execute before specific consent.
+- Current site has no analytics or advertising tools; do not mislead users about tracking.
+- Always obtain a fresh consent version and identify new providers before adding non-essential scripts.
+- Treat the published terms as general information; individual written terms govern each accepted instruction.
+- Do not invent retention periods, fee schedules, security features or international transfer facts.
+
 ## Technical boundaries
 - Use Astro + TypeScript with STATIC output for Cloudflare Pages. Do not introduce server-side rendering or a large client-side framework without a genuine requirement.
 - Centralise tokens, data and reusable components. No giant copy-and-pasted page components.

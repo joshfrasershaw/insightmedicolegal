@@ -1,12 +1,38 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
 ---
-<BaseLayout title="Cookie policy | Insight Medicolegal" description="Information about cookies on this website.">
+<BaseLayout title="Cookie policy | Insight Medicolegal" description="What site storage is used, how optional cookies are controlled, and how to change your choice.">
   <section class="inner-page">
     <div class="container legal-content">
       <h1>Cookie policy</h1>
-      <p class="page-lead">We don't currently use cookies for analytics or advertising.</p>
-      <p>Some photographs on this site load from Webflow.</p>
+      <p class="page-lead">The site uses a small amount of necessary browser storage. No analytics or advertising trackers are currently installed.</p>
+      <p class="small-print">Updated 2 November 2026.</p>
+
+      <h2>What are cookies and similar technologies?</h2>
+      <p>Cookies are small files that websites can save in your browser. Similar technologies include local storage, tracking pixels and scripts that read information on your device. UK privacy rules apply to many of these technologies, not just cookies.</p>
+
+      <h2>What this website uses</h2>
+      <table class="legal-table">
+        <thead><tr><th scope="col">Purpose</th><th scope="col">What happens</th><th scope="col">Choice</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Necessary site storage</strong></td><td>Browser local storage remembers your cookie choice under <code>insight_cookie_preferences</code> for up to 180 days. This avoids asking on every visit. The web host may also use essential security or network cookies.</td><td>Needed for the choice and security features.</td></tr>
+          <tr><td><strong>Analytics</strong></td><td>Not currently in use. No Google Analytics or other analytics script is included in the current website code.</td><td>Disabled.</td></tr>
+          <tr><td><strong>Advertising</strong></td><td>Not currently in use. No advertising pixels or remarketing scripts are included in the current website code.</td><td>Disabled.</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Photographs hosted elsewhere</h2>
+      <p>Some Glasgow photographs are requested from a Webflow-hosted Amazon S3 address. The provider may receive normal request information such as your IP address and browser details. These requests are not the same as opting in to advertising cookies. See our <a href="/privacy-policy">privacy notice</a> for more information about data sharing.</p>
+
+      <h2>Managing cookies</h2>
+      <p>Use the button below, or the 'Cookie settings' link in the footer, to review or change your saved choice at any time. Rejecting optional cookies does not stop you using the website.</p>
+      <button class="button button-outline" type="button" data-cookie-open>Cookie settings</button>
+      <p>You can also clear this site's browser storage or block cookies in your browser settings. Some essential hosting security features may then behave differently.</p>
+
+      <h2>If the site changes</h2>
+      <p>If analytics, advertising or other optional services are added, the site must explain what each tool does, identify the provider and ask for a new choice <strong>before</strong> loading it. A choice made today is not permission for undisclosed future tracking.</p>
+      <p>Questions? Email <a href={'mailto:' + site.email}>{site.email}</a>.</p>
     </div>
   </section>
 </BaseLayout>

@@ -1,6 +1,7 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import CookieConsent from '../components/CookieConsent.astro';
 import '../styles/global.css';
 
 interface Props {
@@ -26,5 +27,6 @@ const isReadyForLaunch = import.meta.env.PUBLIC_SITE_READY === 'true';
     <Header />
     <main id="main"><slot /></main>
     <Footer />
+    <CookieConsent />
   </body>
 </html>

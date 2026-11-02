@@ -9,7 +9,8 @@
     "preview": "astro preview",
     "check": "astro check",
     "deploy": "npm run build && wrangler deploy",
-    "preview:cloudflare": "npm run build && wrangler dev"
+    "preview:cloudflare": "npm run build && wrangler dev",
+    "test:compliance": "node scripts/compliance-smoke.mjs"
   },
   "dependencies": {
     "astro": "^7.4.4"
