@@ -1,0 +1,5 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {expertise} from '../data/site';
+---
+<BaseLayout title="Areas of Expertise | Insight Medicolegal" description="Independent psychiatric expert witness reports."><section class="inner-page"><div class="container"><h1>Areas of psychiatric expertise</h1><p class="page-lead">Independent psychiatric reports for legal and professional proceedings.</p><div class="expertise-overview">{expertise.map(e=><a class="overview-card" href={'/'+e.slug}><h2>{e.title}</h2><p>{e.summary}</p><span>Explore ↗</span></a>)}</div></div></section></BaseLayout>
