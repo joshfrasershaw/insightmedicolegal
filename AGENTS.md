@@ -17,7 +17,8 @@ Implement the complete website end-to-end: visual reproduction, every route, sha
 - Do not invent clinical services, credentials, testimonials, outcomes, fees or reporting guarantees.
 - This is mainly DESIGN work. No SEO rewrite, keyword exercise, generic component library makeover, or unrequested new marketing copy.
 - Remove decorative eyebrows, kickers, overlines, number labels, redundant chips and duplicated panels. Preserve useful functional labels and semantic structure.
-- Reuse actual approved photographic assets; no AI faces or generic medical stock images.
+- **Client instruction (2 November 2026): Do not use any photograph, likeness or portrait of Dr Yameen Qureshi anywhere on the site.** The Webflow portrait is no longer an approved asset. Retain authentic location/architecture imagery; use subtle typographic artwork for the homepage and About profile.
+- Keep design enhancements restrained: delicate paper-like texture, soft arch/contour linework and thoughtful whitespace. No generic medical stock imagery, icons or gimmicks.
 - Prefer clear Georgia headings, Arial/system sans text, navy and warm cream; see CODEX_TASK.md.
 - Preserve the footer credit to Allerton Digital and the company's legal information.
 - Verify contrast and mobile layouts.

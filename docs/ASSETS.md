@@ -11,12 +11,8 @@ https://s3.amazonaws.com/webflow-prod-assets/69d54197306f7335172bf4d8/6ad75a0902
 Suggested local file: /images/glasgow-university-hero.jpg
 Style: cover; navy gradient overlay; visually centre photo; white H1.
 
-### Profile/portrait visual used in Webflow CSS
-Webflow class: im-profile-visual
-URL:
-https://s3.amazonaws.com/webflow-prod-assets/69d54197306f7335172bf4d8/6ad7824f243acb91c909f9c9_e102a009-fa97-4d02-9888-1aa29491ebe9.png
-Suggested local file: /images/doctor-profile-source.png
-IMPORTANT: Visually inspect the actual image to confirm content and use. Do not invent a substitute portrait.
+### No personal portrait imagery
+The client expressly requested on 2 November 2026 that **no photographs of Dr Yameen Qureshi** appear on the website. Do not copy, download, reference or reuse his old Webflow profile photo. Homepage and About sections use custom CSS typography and fine architectural linework instead.
 
 ### Glasgow city architecture/process photo
 Webflow class: im-process-photo
@@ -35,9 +31,9 @@ URL:
 https://s3.amazonaws.com/webflow-prod-assets/69d54197306f7335172bf4d8/6aa7ada4aa1049e4bfe9aa30_Glasgow-University-Historic.jpg
 
 ## Rules
-- No generic medical, hospital or AI face imagery.
+- No photographs or likenesses of Dr Qureshi. No generic medical, hospital or AI face imagery.
 - Preserve natural crops and proper aspect ratios; verify 1440px desktop and narrow mobile.
 - Use descriptive alt text for content images; decorative backgrounds should not have redundant alt text.
-- Optimise heavy photos sensibly and use modern formats as appropriate. Do not lose facial detail.
+- Optimise heavy photos sensibly and use modern formats as appropriate. Preserve architectural detail.
 - Lazy-load below-fold inline images; prioritise the main hero.
 - Keep source attribution/copyright requirements intact, and check provenance where not already documented.
