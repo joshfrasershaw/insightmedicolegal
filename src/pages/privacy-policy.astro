@@ -1,5 +1,20 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import {site} from '../data/site';
+import { site } from '../data/site';
 ---
-<BaseLayout title="Privacy policy | Insight Medicolegal" description="Privacy information for professional medico-legal instructions."><section class="inner-page"><div class="container legal-content"><h1>Privacy policy</h1><p class="page-lead">Insight Medicolegal Ltd is the controller for personal information processed in professional enquiries and medico-legal instructions. Registered in Scotland, SC822243. ICO ZB830807.</p><h2>Contact</h2><p>For data protection enquiries, contact <a href={'mailto:'+site.email}>{site.email}</a>.</p><h2>Confidential records</h2><p>Do not send medical records until secure arrangements have been agreed.</p></div></section></BaseLayout>
+<BaseLayout title="Privacy policy | Insight Medicolegal" description="How Insight Medicolegal uses personal information.">
+  <section class="inner-page">
+    <div class="container legal-content">
+      <h1>Privacy policy</h1>
+      <p class="page-lead">How we use the information you give us.</p>
+      <h2>Who we are</h2>
+      <p>Insight Medicolegal Ltd is registered in Scotland (SC822243) and with the Information Commissioner's Office (ZB830807).</p>
+      <h2>What we use your information for</h2>
+      <p>We use contact information to reply to enquiries. Information supplied for a report is used to carry out that work.</p>
+      <h2>Medical records</h2>
+      <p>Don't send medical records until you've agreed a secure way to send them.</p>
+      <h2>Questions about your information?</h2>
+      <p>Email <a href={'mailto:' + site.email}>{site.email}</a>.</p>
+    </div>
+  </section>
+</BaseLayout>

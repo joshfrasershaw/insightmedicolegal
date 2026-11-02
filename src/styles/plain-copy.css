@@ -1,0 +1,10 @@
+/* Report pages: short, specific information rather than templated agency prose. */
+.report-page .report-page__header{max-width:860px;margin-bottom:clamp(45px,6vw,70px);}
+.report-page .report-page__body{width:min(100%,770px);margin-inline:auto;}
+.report-page__body h2{margin:0 0 26px;font-size:clamp(28px,3vw,41px);}
+.report-page__list{list-style:none;margin:0 0 35px;padding:0;border-top:1px solid var(--line);}
+.report-page__list li{position:relative;margin:0;padding:17px 0 17px 26px;border-bottom:1px solid var(--line);color:var(--slate);font-size:16px;line-height:1.7;}
+.report-page__list li::before{content:"";position:absolute;left:0;top:28px;width:6px;height:6px;border-radius:50%;background:var(--navy);}
+.report-page__note{margin:0 0 28px;color:var(--slate);font-size:16px;line-height:1.75;}
+.report-page__body .button{margin-top:4px;}
+@media(max-width:720px){.report-page .report-page__header{margin-bottom:42px;}.report-page__list li{font-size:15px;}}

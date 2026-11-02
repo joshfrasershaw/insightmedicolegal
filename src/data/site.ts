@@ -18,19 +18,19 @@ export const site = {
 } as const;
 
 export const mainNav = [
-  { label: 'Expertise', href: '/areas-of-expertise' },
+  { label: 'Reports', href: '/areas-of-expertise' },
   { label: 'About', href: '/about' },
-  { label: 'Instructions', href: '/instructions' },
+  { label: 'How it works', href: '/instructions' },
   { label: 'Contact', href: '/contact' },
 ] as const;
 
 export const expertise = [
-  { title: 'Post-traumatic stress disorder', slug: 'post-traumatic-stress-disorder', summary: 'Trauma-related symptoms, diagnosis, causation, treatment and prognosis.' },
-  { title: 'Anxiety and depression', slug: 'anxiety-depression', summary: 'Symptoms, psychiatric injury, pre-existing factors and functioning.' },
-  { title: 'Addiction psychiatry', slug: 'addiction-psychiatry', summary: 'Alcohol and substance misuse, dependence and dual diagnosis.' },
-  { title: 'Chronic pain and psychological injury', slug: 'chronic-pain-psychological-injury', summary: 'Psychiatric consequences of injury and persistent pain.' },
-  { title: 'Personality and adjustment disorders', slug: 'personality-adjustment-disorders', summary: 'Longstanding personality difficulties and adjustment reactions.' },
-  { title: 'Personal injury and clinical negligence', slug: 'personal-injury-clinical-negligence', summary: 'Diagnosis, causation, treatment needs and prognosis.' },
-  { title: 'Employment and occupational matters', slug: 'employment-occupational-matters', summary: 'Workplace events, occupational functioning and capacity for work.' },
-  { title: 'Professional regulation', slug: 'professional-regulation', summary: 'Fitness-to-practise and other professional regulatory proceedings.' },
+  { title: 'Post-traumatic stress disorder', slug: 'post-traumatic-stress-disorder', summary: 'Trauma symptoms, diagnosis and their effect on daily life.' },
+  { title: 'Anxiety and depression', slug: 'anxiety-depression', summary: 'How anxiety or depression affects work and daily life.' },
+  { title: 'Addiction psychiatry', slug: 'addiction-psychiatry', summary: 'Alcohol or drug dependence and related mental health problems.' },
+  { title: 'Chronic pain and psychological injury', slug: 'chronic-pain-psychological-injury', summary: 'The mental health effects of injury or long-term pain.' },
+  { title: 'Personality and adjustment disorders', slug: 'personality-adjustment-disorders', summary: 'Long-standing difficulties and responses to stressful events.' },
+  { title: 'Personal injury and clinical negligence', slug: 'personal-injury-clinical-negligence', summary: 'Mental health problems following injury or medical treatment.' },
+  { title: 'Employment and occupational matters', slug: 'employment-occupational-matters', summary: 'Mental health, workplace disputes and ability to work.' },
+  { title: 'Professional regulation', slug: 'professional-regulation', summary: 'Mental health evidence for professional regulators.' },
 ] as const;

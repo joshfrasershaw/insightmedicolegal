@@ -2,16 +2,31 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { site } from '../data/site';
 ---
-<BaseLayout title="Contact Insight Medicolegal" description="Professional instructions and enquiries for consultant psychiatrist Dr Yameen Qureshi.">
-  <div class="internal-page">
-    <div class="page-container">
-      <h1>Contact Insight Medicolegal</h1>
-      <p class="page-lead">Professional enquiries and instructions for consultant psychiatrist Dr Yameen Qureshi.</p>
-      <div class="contact-panel">
-        <div><h2>Email</h2><p><a href={'mailto:' + site.email}>{site.email}</a></p></div>
-        <div><h2>Telephone</h2><p><a href={site.phoneHref}>{site.phone}</a></p></div>
+<BaseLayout title="Contact | Insight Medicolegal" description="Email or call Dr Yameen Qureshi about a psychiatric expert report.">
+  <section class="inner-page">
+    <div class="container">
+      <header class="page-head">
+        <h1>Contact</h1>
+        <p class="page-lead">Email or call Dr Qureshi about a report.</p>
+      </header>
+      <div class="contact-grid">
+        <div class="contact-details">
+          <div class="contact-detail">
+            <h2>Email</h2>
+            <a href={'mailto:' + site.email}>{site.email}</a>
+          </div>
+          <div class="contact-detail">
+            <h2>Phone</h2>
+            <a href={site.phoneHref}>{site.phone}</a>
+          </div>
+        </div>
+        <div class="contact-note">
+          <h2>First enquiry</h2>
+          <p>A short outline of the case is enough to get started. Mention a deadline if you have one.</p>
+          <p>Don't send medical records until you've agreed a secure way to send them.</p>
+          <a class="button button-dark" href={'mailto:' + site.email}>Send an email ↗</a>
+        </div>
       </div>
-      <p>Please include the questions to be addressed, approximate volume of records and required reporting date. Do not send confidential medical records until secure arrangements have been agreed.</p>
     </div>
-  </div>
+  </section>
 </BaseLayout>

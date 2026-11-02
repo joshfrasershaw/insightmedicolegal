@@ -11,6 +11,15 @@ This repository is the NEW implementation repository. It starts as an Astro scaf
 ## Your mission
 Implement the complete website end-to-end: visual reproduction, every route, shared components, content, responsive behaviour, working email/telephone/internal links, Cloudflare-compatible build and tests. Do not stop after creating a plan or just a homepage.
 
+## Client's writing voice — 2 November 2026
+- **Very short, plain English.** Write like a practical professional speaking to another person. No agency slogans, flowery copy or self-praise.
+- Do not claim the communication is clear or concise. Demonstrate it.
+- Keep exact clinical or legal terms where useful; cut abstract phrases such as 'scope and availability', 'on clinical and evidential merits' and 'within the agreed remit'.
+- Do not invent a mandatory first-enquiry process. A brief email or call can begin the discussion; records volume and deadlines are helpful context, not compulsory.
+- The homepage headline is 'Psychiatric expert reports.' Do not restore the earlier slogan.
+- Every specialist page must give specific information, not reused generic paragraphs.
+- Never claim a fixed fee or deadline without approval. Legal pages require separate review.
+
 ## Design hierarchy
 - Webflow is the source of truth for VISUAL DESIGN, assets, section order and intended visible elements.
 - The existing Insight Medicolegal content/claims in the old codebase are a supplementary reference for factual content, qualifications, legal information and established website routes.

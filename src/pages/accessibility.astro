@@ -1,4 +1,13 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
 ---
-<BaseLayout title="Accessibility | Insight Medicolegal" description="Accessibility information."><section class="inner-page"><div class="container"><h1>Accessibility</h1><p class="page-lead">The site supports keyboard navigation, semantic headings and responsive layouts. For access difficulties, please contact the practice via the contact page.</p><a href="/contact">Contact the practice ↗</a></div></section></BaseLayout>
+<BaseLayout title="Accessibility | Insight Medicolegal" description="Help using the Insight Medicolegal website.">
+  <section class="inner-page">
+    <div class="container legal-content">
+      <h1>Accessibility</h1>
+      <p class="page-lead">If you have trouble using this website, tell us.</p>
+      <p>We can help you find the information you need. Email <a href={'mailto:' + site.email}>{site.email}</a> or call <a href={site.phoneHref}>{site.phone}</a>.</p>
+    </div>
+  </section>
+</BaseLayout>
