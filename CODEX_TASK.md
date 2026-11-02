@@ -2,6 +2,10 @@
 
 **Execute this brief. Do not merely write a proposal.**
 
+## Latest client copy instruction — 2 November 2026
+The client wants **brutal efficiency in plain English**. No marketing slogans, abstract jargon, self-congratulation or repetitive assurances. The homepage H1 is "Psychiatric expert reports." This overrides the earlier Webflow tagline. Short, factual copy is more important than literal reproduction of Webflow's written text.
+A first enquiry must not require records volume, a deadline or any paperwork. A short email or call is enough to start. Do not promise a fee or reporting time without confirming it. Every specialist page needs a few specific, useful points, not generic repeated paragraphs.
+
 ## Objective
 Recreate the LATEST Insight Medicolegal Webflow design in THIS repository (joshfrasershaw/insightmedicolegal). Make it fast, accessible, mobile-friendly and easy to maintain. Prepare it for Git-connected Cloudflare Workers static asset hosting. Implement the WHOLE website and test it. The current public insightmedicolegal.co.uk design is NOT the approved visual reference.
 
@@ -36,24 +40,24 @@ Dr Qureshi does not want photos of himself on the website. Remove any Webflow po
 - Airy editorial layout, subdued lines/borders, authentic Glasgow architecture photography and restrained shadows. NOT a hospital brochure, a SaaS interface or a generic template.
 
 ## Global header
-Recreate the floating, white, gently shadowed Webflow navigation pill, max width around 960px and min height around 64px on desktop. Wordmark INSIGHT MEDICOLEGAL on left. Main links: Expertise, About, Instructions, Contact. Dark navy pill CTA: Discuss an instruction ↗. Use real routes from docs/ROUTES.md. On mobile the navigation MUST remain usable, with a tidy two-row/wrapping design if necessary, no sideways overflow, and visible focus states. On internal pages provide room below the floating header.
+Recreate the floating, white, gently shadowed Webflow navigation pill, max width around 960px and min height around 64px on desktop. Wordmark INSIGHT MEDICOLEGAL on left. Main links: Expertise, About, Instructions, Contact. Dark navy pill CTA: Ask about a report ↗. Use real routes from docs/ROUTES.md. On mobile the navigation MUST remain usable, with a tidy two-row/wrapping design if necessary, no sideways overflow, and visible focus states. On internal pages provide room below the floating header.
 
 ## Global footer
-One shared **cloisters-photo-backed footer** on every page, with the confirmed Glasgow University cloisters asset in docs/ASSETS.md behind a deep navy overlay. In the *same uninterrupted background block*, display the 'Discuss an instruction' CTA, email and telephone links on the left, with INSIGHT MEDICOLEGAL branding, navigation, legal links, company details and Allerton Digital credit on the right. Stack vertically on mobile. Never place the CTA in one band and the footer in another; no duplicate ContactBanner.
+One shared **cloisters-photo-backed footer** on every page, with the confirmed Glasgow University cloisters asset in docs/ASSETS.md behind a deep navy overlay. In the *same uninterrupted background block*, display the 'Need a report?' CTA, email and telephone links on the left, with INSIGHT MEDICOLEGAL branding, navigation, legal links, company details and Allerton Digital credit on the right. Stack vertically on mobile. Never place the CTA in one band and the footer in another; no duplicate ContactBanner.
 
 ## Homepage: recreate Webflow sections in order
 
-1. **Photographic hero.** Full-width Glasgow University photograph from docs/ASSETS.md, cover/centred, dark navy overlay (approx linear-gradient(90deg, rgba(10,25,32,.40), rgba(10,25,32,.53) 50%, rgba(10,25,32,.40))). Desktop roughly full viewport. Centred large white Georgia H1: "Clear psychiatric opinion for legal decisions." Supporting line: "Dr Yameen Qureshi · Consultant Psychiatrist and Independent Expert Witness. Clear, independent psychiatric opinion for legal, insurance and regulatory proceedings." Primary button "Discuss an instruction ↗". No hero stats, cards, eyebrows or decorative icons.
+1. **Photographic hero.** Full-width Glasgow University photograph from docs/ASSETS.md, cover/centred, dark navy overlay (approx linear-gradient(90deg, rgba(10,25,32,.40), rgba(10,25,32,.53) 50%, rgba(10,25,32,.40))). Desktop roughly full viewport. Centred large white Georgia H1: "Psychiatric expert reports." Supporting line: "Dr Yameen Qureshi is a consultant psychiatrist in Glasgow. He prepares independent reports for courts, insurers and professional regulators." Primary button "Ask about a report ↗". No hero stats, cards, eyebrows or decorative icons.
 
 2. **Compact expertise strip.** Warm cream, centred concise line "PTSD · Depression · Anxiety disorders · Personality disorders · Fitness to plead" with a clear text link to the expertise index. Clean transition, not an oversized card.
 
 3. **Editorial doctor introduction.** Warm off-white, generous centered typography. **No portrait or photograph of Dr Qureshi, and no replacement square, rectangular box, photograph placeholder, or typographic artwork panel.** Centre the Georgia 'Dr Yameen Qureshi.' heading, two introductory paragraphs, verified qualifications 'MBBS · MRCPsych · MSc · FRCPsych', and About link. Refine with only very subtle background texture and cloister-inspired fine-line patterning.
 
-4. **Eight-area expertise collection.** Warm cream with a large Georgia headline "Specialist psychiatric opinions." Eight named areas: post-traumatic stress disorder; anxiety and depression; addiction psychiatry; chronic pain and psychological injury; personality and adjustment disorders; personal injury and clinical negligence; employment and occupational matters; professional regulation. Each has a short concise description and working link. The Webflow source numbers cards 01–08; use numbers only where they genuinely aid the designed sequence. Do not reintroduce arbitrary numbering to other sections or add cluttered icon cards.
+4. **Eight-area expertise collection.** Warm cream with a large Georgia headline "Types of reports" Eight named areas: post-traumatic stress disorder; anxiety and depression; addiction psychiatry; chronic pain and psychological injury; personality and adjustment disorders; personal injury and clinical negligence; employment and occupational matters; professional regulation. Each has a short concise description and working link. The Webflow source numbers cards 01–08; use numbers only where they genuinely aid the designed sequence. Do not reintroduce arbitrary numbering to other sections or add cluttered icon cards.
 
-5. **Instruction/process.** Split Glasgow architecture photo alongside a light editorial content area. Heading "Instructing Dr Qureshi". Three key pieces of instruction information: questions to address, approximate records volume, required reporting date. Link to /instructions.
+5. **Instruction/process.** Split Glasgow architecture photo alongside a light editorial content area. Heading "Getting a report". Invite a short email or call. Explain that cost, timing and documents can be discussed before deciding whether to proceed. No compulsory initial checklist. Link to /instructions.
 
-6. **FAQ.** Calm editorial accordion, keyboard accessible. Useful questions about remote assessment, information needed, fees/timescales, and who may instruct. Existing factual material only.
+6. **FAQ.** Calm editorial accordion, keyboard accessible. Plain questions with useful answers about video assessments, first enquiries, fees, timing and who can instruct.
 
 7. **Combined contact and footer.** The contact CTA occupies the left half of the same dark, cloisters-photo-backed global footer that contains branding, navigation and legal information on the right. No separate full-width CTA block.
 

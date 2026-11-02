@@ -1,5 +1,36 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import {site} from '../data/site';
+import { site } from '../data/site';
 ---
-<BaseLayout title="Instructions & Contact | Insight Medicolegal" description="How to instruct Dr Yameen Qureshi and arrange an independent psychiatric assessment."><section class="inner-page"><div class="container"><h1>Instructions & Contact</h1><p class="page-lead">Every instruction begins with a question. Professional enquiries only; no patient self-referrals.</p><div class="instructions-points"><div class="instruction-point"><span>01</span><h3>Enquiry</h3><p>Provide the questions to be addressed, approximate volume of records and required reporting date.</p></div><div class="instruction-point"><span>02</span><h3>Scope & availability</h3><p>Suitability, fees and timescales are confirmed for each proposed instruction.</p></div><div class="instruction-point"><span>03</span><h3>Assessment & report</h3><p>Assessment and secure record-transfer arrangements are agreed before a report is prepared.</p></div></div><p>Do not send confidential medical records until secure arrangements have been agreed.</p><div class="internal-actions"><a class="button button-dark" href={'mailto:'+site.email}>Email Dr Qureshi ↗</a><a href={site.phoneHref}>Call {site.phone} ↗</a></div></div></section></BaseLayout>
+<BaseLayout title="How it works | Insight Medicolegal" description="How to ask Dr Yameen Qureshi about a psychiatric expert report.">
+  <section class="inner-page">
+    <div class="container">
+      <header class="page-head">
+        <h1>How it works</h1>
+        <p class="page-lead">Start with an email or a phone call. You don't need to send medical records to ask about a case.</p>
+      </header>
+      <div class="instructions-points">
+        <div class="instruction-point">
+          <span>01</span>
+          <h3>Get in touch</h3>
+          <p>Briefly explain the case. Mention a deadline if you have one.</p>
+        </div>
+        <div class="instruction-point">
+          <span>02</span>
+          <h3>Discuss the details</h3>
+          <p>Check whether Dr Qureshi can help. Discuss the fee, timing and any records needed.</p>
+        </div>
+        <div class="instruction-point">
+          <span>03</span>
+          <h3>If you go ahead</h3>
+          <p>Agree how to send records securely and arrange any assessment needed.</p>
+        </div>
+      </div>
+      <p>Do not email medical records until a secure way to send them has been agreed.</p>
+      <div class="internal-actions">
+        <a class="button button-dark" href={'mailto:' + site.email}>Email Dr Qureshi ↗</a>
+        <a class="button button-outline" href={site.phoneHref}>Call {site.phone} ↗</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

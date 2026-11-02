@@ -1,11 +1,13 @@
 ---
 import { mainNav } from '../data/site';
-const path=Astro.url.pathname.replace(/\/$/,'')||'/';
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
 ---
-<header class:list={['site-header',{'is-home':path==='/'}]}>
-<nav class="nav-pill" aria-label="Primary navigation">
-<a class="brand" href="/" aria-label="Insight Medicolegal homepage">INSIGHT<span>MEDICOLEGAL</span></a>
-<div class="nav-links">{mainNav.map(item=><a href={item.href} aria-current={path===item.href?'page':undefined}>{item.label}</a>)}</div>
-<a class="nav-cta" href="/instructions">Discuss an instruction <span aria-hidden="true">↗</span></a>
-</nav>
+<header class:list={['site-header', { 'is-home': path === '/' }]}>
+  <nav class="nav-pill" aria-label="Main navigation">
+    <a class="brand" href="/" aria-label="Insight Medicolegal home">INSIGHT<span>MEDICOLEGAL</span></a>
+    <div class="nav-links">
+      {mainNav.map(item => <a href={item.href} aria-current={path === item.href ? 'page' : undefined}>{item.label}</a>)}
+    </div>
+    <a class="nav-cta" href="/contact">Ask about a report <span aria-hidden="true">↗</span></a>
+  </nav>
 </header>

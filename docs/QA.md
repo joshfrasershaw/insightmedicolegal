@@ -48,3 +48,12 @@ Do not mark DONE without evidence. Update docs/IMPLEMENTATION_LOG.md after perfo
 - [ ] Code committed to a feature branch with reviewable PR.
 - [ ] Cloudflare preview tested if connected.
 - [ ] No production domain/DNS changes without approval.
+
+## Plain English and brevity
+- [ ] Homepage H1 is "Psychiatric expert reports.", with no agency tagline.
+- [ ] No "scope and availability", "reasoned expert opinion", or similarly vague filler.
+- [ ] Homepage, About, specialist, instruction, contact, FAQ and footer text answer practical questions using short sentences.
+- [ ] A first enquiry can be a brief email/call; records volume, deadlines and formal documents are not mandatory.
+- [ ] Each specialist page uses distinct, relevant content.
+- [ ] No fixed fees or turnaround promises without approval.
+- [ ] Legal notices and terms receive a separate review for completeness.

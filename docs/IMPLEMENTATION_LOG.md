@@ -27,3 +27,10 @@ Pending. For each significant change, record date, files changed, reason, actual
 - Consolidated the homepage's separate ContactBanner and footer into one shared, cloisters-photo-backed footer on every route, with CTA on left and brand/navigation/legal details on right, stacked on mobile.
 - Harmonised minimal grain and architectural arch motifs across the cream/white/blue sections without adding competing ornaments or new image assets.
 - Verification pending GitHub Actions.
+
+## Plain-English revision — 2 November 2026
+- Replaced marketing-led hero copy with "Psychiatric expert reports." and factual supporting text.
+- Simplified biography, expertise, instructions, FAQs, contact and the shared footer.
+- Replaced generic repeated specialist/location copy with ten short, topic-specific summaries and bullets.
+- Removed compulsory-sounding first-enquiry checklists and avoided unverified promises about fees or deadlines.
+- Updated agent guidance. The legal pages still require an independent compliance review.

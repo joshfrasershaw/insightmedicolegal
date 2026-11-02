@@ -1,5 +1,31 @@
 ---
 import FAQ from './FAQ.astro';
-const questions=[{question:'Can assessments be conducted remotely?',answer:'Please enquire to discuss suitable assessment arrangements.'},{question:'What information is required?',answer:'The questions to be addressed, approximate records volume and reporting date.'},{question:'How are fees and timescales confirmed?',answer:'Please contact Dr Qureshi to discuss your requirements.'},{question:'Who can instruct?',answer:'Solicitors, insurers and professional organisations. No patient self-referrals.'}];
+const questions = [
+  {
+    question: 'Can the assessment be done by video?',
+    answer: 'Sometimes. It depends on the case. Ask when you get in touch.'
+  },
+  {
+    question: 'What should I send first?',
+    answer: 'A short email about the case is fine. Mention a deadline if you have one. Please do not send medical records until you have agreed a secure way to send them.'
+  },
+  {
+    question: 'What will it cost?',
+    answer: 'Fees depend on the work involved. Ask for a quote before deciding whether to go ahead.'
+  },
+  {
+    question: 'How long will it take?',
+    answer: 'It depends on the case and when an assessment can take place. Ask about timing when you get in touch.'
+  },
+  {
+    question: 'Can patients contact you for treatment?',
+    answer: 'No. This service is for solicitors, insurers and other professional organisations.'
+  }
+];
 ---
-<section class="section faq-section"><div class="container faq-grid"><div><h2>Common Questions</h2><p class="intro">Quick answers about psychiatric assessments and instructing Dr Qureshi.</p></div><FAQ questions={questions}/></div></section>
+<section class="section faq-section">
+  <div class="container faq-grid">
+    <div><h2>Questions</h2></div>
+    <FAQ questions={questions} />
+  </div>
+</section>
