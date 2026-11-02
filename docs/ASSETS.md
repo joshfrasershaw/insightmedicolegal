@@ -9,10 +9,10 @@ Webflow class: insight-hero
 URL:
 https://s3.amazonaws.com/webflow-prod-assets/69d54197306f7335172bf4d8/6ad75a09028df0ae44f5e998_HERO-UGalsgow_1127848313.jpg
 Suggested local file: /images/glasgow-university-hero.jpg
-Style: cover; navy gradient overlay; visually centre photo; white H1.
+Style: cover; navy gradient overlay; visually centre photo; white H1. **Reuse this exact Glasgow University cloisters image** as the shared unified footer background, with a darker navy gradient to protect text legibility.
 
 ### No personal portrait imagery
-The client expressly requested on 2 November 2026 that **no photographs of Dr Yameen Qureshi** appear on the website. Do not copy, download, reference or reuse his old Webflow profile photo. Homepage and About sections use custom CSS typography and fine architectural linework instead.
+The client expressly requested on 2 November 2026 that **no photographs of Dr Yameen Qureshi** appear on the website. Do not copy, download, reference or reuse his old Webflow profile photo. Homepage and About introductions are centred text with **no image-shaped replacement boxes**. Very faint background texture and fine architectural linework may sit behind the text, never inside a card.
 
 ### Glasgow city architecture/process photo
 Webflow class: im-process-photo

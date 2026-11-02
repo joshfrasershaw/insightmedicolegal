@@ -21,3 +21,9 @@ Pending. For each significant change, record date, files changed, reason, actual
 - Added restrained paper-grain, fine arch/contour and hairline textures to selected sections and internal-page backgrounds; no new image libraries or external scripts.
 - Updated the project instructions and asset policies to ensure future coding agents do not restore the portrait.
 - Build/CI status to be recorded once the revision is checked.
+
+## Layout clarification — 2 November 2026
+- Removed the portrait *and* the entire portrait/artwork box on both the homepage and About page. Centre-aligned their doctor introduction and body text.
+- Consolidated the homepage's separate ContactBanner and footer into one shared, cloisters-photo-backed footer on every route, with CTA on left and brand/navigation/legal details on right, stacked on mobile.
+- Harmonised minimal grain and architectural arch motifs across the cream/white/blue sections without adding competing ornaments or new image assets.
+- Verification pending GitHub Actions.
