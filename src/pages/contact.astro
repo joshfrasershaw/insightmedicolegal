@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
+---
+<BaseLayout title="Contact Insight Medicolegal" description="Professional instructions and enquiries for consultant psychiatrist Dr Yameen Qureshi.">
+  <div class="internal-page">
+    <div class="page-container">
+      <h1>Contact Insight Medicolegal</h1>
+      <p class="page-lead">Professional enquiries and instructions for consultant psychiatrist Dr Yameen Qureshi.</p>
+      <div class="contact-panel">
+        <div><h2>Email</h2><p><a href={'mailto:' + site.email}>{site.email}</a></p></div>
+        <div><h2>Telephone</h2><p><a href={site.phoneHref}>{site.phone}</a></p></div>
+      </div>
+      <p>Please include the questions to be addressed, approximate volume of records and required reporting date. Do not send confidential medical records until secure arrangements have been agreed.</p>
+    </div>
+  </div>
+</BaseLayout>

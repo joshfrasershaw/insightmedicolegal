@@ -1,0 +1,19 @@
+---
+import { mainNav } from '../data/site';
+const currentPath = Astro.url.pathname.replace(/\/$/, '') || '/';
+---
+<header class="site-header">
+  <nav class="nav-pill" aria-label="Primary navigation">
+    <a class="brand" href="/" aria-label="Insight Medicolegal homepage">
+      INSIGHT <span>MEDICOLEGAL</span>
+    </a>
+    <div class="nav-links">
+      {mainNav.map((item) => (
+        <a href={item.href} aria-current={currentPath === item.href ? 'page' : undefined}>
+          {item.label}
+        </a>
+      ))}
+    </div>
+    <a class="nav-cta" href="/instructions">Discuss an instruction <span aria-hidden="true">↗</span></a>
+  </nav>
+</header>

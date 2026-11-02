@@ -1,0 +1,17 @@
+---
+import { site, mainNav } from '../data/site';
+---
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-name">INSIGHT MEDICOLEGAL</p>
+    <p class="footer-description">Independent psychiatric expert witness reports by {site.doctor}.</p>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="/">Home</a>
+      {mainNav.map((item) => <a href={item.href}>{item.label === 'Expertise' ? 'Areas of expertise' : item.label}</a>)}
+    </nav>
+    <p class="footer-legal">
+      © {new Date().getFullYear()} {site.legalName} · Registered in Scotland {site.companyNumber} · Registered office: {site.registeredOffice} · {site.doctor} · GMC {site.gmc}. Independent medico-legal expert witness services; no patient self-referrals.
+    </p>
+    <p class="footer-credit">Website built and managed by <a href={site.developerUrl} rel="noopener noreferrer">{site.developerName} ↗</a></p>
+  </div>
+</footer>
