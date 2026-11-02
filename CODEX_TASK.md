@@ -17,7 +17,7 @@ Webflow shared components: Insight | Global Header and Insight | Global Footer
 When Webflow Designer access exists, inspect the actual current/unpublished site, not solely the last published version. If the Designer is unavailable, implement from this brief and the source/asset documentation without waiting for access. Clearly log any unverified differences. Do not generate dummy medical claims.
 
 ## Explicit photography and visual texture instruction (2 November 2026)
-Dr Qureshi does not want photos of himself on the website. Remove any Webflow portrait asset and never reintroduce one in new sections. Give selected backgrounds light paper-like texture and subtle linework, preserving readability, professionalism and the existing restrained palette.
+Dr Qureshi does not want photos of himself on the website. Remove any Webflow portrait asset and never reintroduce one in new sections. Give cream, white, slate and blue sections consistently light paper-like texture and subtle cloister-inspired arch linework, preserving readability, professionalism and the existing restrained palette. **Do not leave an image-sized block or decorative typographic replacement where a portrait was removed. Centre the introductory biography on homepage and About.**
 
 ## Visual design tokens
 - Primary navy: #254659
@@ -39,7 +39,7 @@ Dr Qureshi does not want photos of himself on the website. Remove any Webflow po
 Recreate the floating, white, gently shadowed Webflow navigation pill, max width around 960px and min height around 64px on desktop. Wordmark INSIGHT MEDICOLEGAL on left. Main links: Expertise, About, Instructions, Contact. Dark navy pill CTA: Discuss an instruction ↗. Use real routes from docs/ROUTES.md. On mobile the navigation MUST remain usable, with a tidy two-row/wrapping design if necessary, no sideways overflow, and visible focus states. On internal pages provide room below the floating header.
 
 ## Global footer
-Deep navy #102C38; white navigation and pale legal text. One shared component, no duplicate home footer. Preserve legal company details, registered office, Dr Qureshi's GMC registration and Allerton Digital website credit linking to https://allertondigital.co.uk. Include working routes Home, Areas of expertise, About, Instructions, Contact, plus real legal pages where supplied. Single-column/wrapped mobile treatment; never a three-column footer squeezed into a phone.
+One shared **cloisters-photo-backed footer** on every page, with the confirmed Glasgow University cloisters asset in docs/ASSETS.md behind a deep navy overlay. In the *same uninterrupted background block*, display the 'Discuss an instruction' CTA, email and telephone links on the left, with INSIGHT MEDICOLEGAL branding, navigation, legal links, company details and Allerton Digital credit on the right. Stack vertically on mobile. Never place the CTA in one band and the footer in another; no duplicate ContactBanner.
 
 ## Homepage: recreate Webflow sections in order
 
@@ -47,7 +47,7 @@ Deep navy #102C38; white navigation and pale legal text. One shared component, n
 
 2. **Compact expertise strip.** Warm cream, centred concise line "PTSD · Depression · Anxiety disorders · Personality disorders · Fitness to plead" with a clear text link to the expertise index. Clean transition, not an oversized card.
 
-3. **Editorial expert profile.** Off-white, generous asymmetric split layout. **No portrait or photograph of Dr Qureshi, at his explicit request.** Use custom CSS-only editorial typographic artwork with delicate architectural arches and fine-line patterning instead of any person. Alongside it, retain the Georgia heading, short practice bio, verified qualifications "MBBS · MRCPsych · MSc · FRCPsych", and profile link. Stack gracefully on mobile.
+3. **Editorial doctor introduction.** Warm off-white, generous centered typography. **No portrait or photograph of Dr Qureshi, and no replacement square, rectangular box, photograph placeholder, or typographic artwork panel.** Centre the Georgia 'Dr Yameen Qureshi.' heading, two introductory paragraphs, verified qualifications 'MBBS · MRCPsych · MSc · FRCPsych', and About link. Refine with only very subtle background texture and cloister-inspired fine-line patterning.
 
 4. **Eight-area expertise collection.** Warm cream with a large Georgia headline "Specialist psychiatric opinions." Eight named areas: post-traumatic stress disorder; anxiety and depression; addiction psychiatry; chronic pain and psychological injury; personality and adjustment disorders; personal injury and clinical negligence; employment and occupational matters; professional regulation. Each has a short concise description and working link. The Webflow source numbers cards 01–08; use numbers only where they genuinely aid the designed sequence. Do not reintroduce arbitrary numbering to other sections or add cluttered icon cards.
 
@@ -55,15 +55,15 @@ Deep navy #102C38; white navigation and pale legal text. One shared component, n
 
 6. **FAQ.** Calm editorial accordion, keyboard accessible. Useful questions about remote assessment, information needed, fees/timescales, and who may instruct. Existing factual material only.
 
-7. **Dark photographic contact CTA.** Navy-tinted photo section, large white Georgia "Discuss an instruction", pale supporting copy, working email and telephone buttons. Remind professionals not to transmit confidential medical records before secure arrangements are agreed.
+7. **Combined contact and footer.** The contact CTA occupies the left half of the same dark, cloisters-photo-backed global footer that contains branding, navigation and legal information on the right. No separate full-width CTA block.
 
-8. **Single shared footer.**
+8. **Single shared footer, already containing the contact CTA.**
 
 **Do not revive hidden legacy Webflow elements:** .im-hide-old, .im-editorial-expertise (display:none), earlier duplicated footer panel, or repeated decorative labels. Only recreate the intended visible current design.
 
 ## Internal pages
 Use the exact public routes listed in docs/ROUTES.md. They include:
-- About: polished editorial biography, **no portrait or likeness**, subtle typography/arch artwork in lieu of photography, verified biography/credentials and instruction CTA.
+- About: **one centred editorial introduction and biography; no portrait, likeness, empty image box, or artwork replacement**. Retain verified biography/credentials and instruction CTA. Use delicate background texture only.
 - Expertise index: all eight areas, a clean introduction, restrained bordered editorial cards/blocks linking to details.
 - Eight specialty pages: one reusable editorial template each, correct H1 and opening, useful clinical context, questions/assessments, related links and instruction CTA; preserve facts rather than making medical claims up.
 - Instructions: clear who-can-instruct, what information is needed, assessment/report arrangements, three-step process and professional email/telephone.

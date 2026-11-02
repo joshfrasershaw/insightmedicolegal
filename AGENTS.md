@@ -17,8 +17,9 @@ Implement the complete website end-to-end: visual reproduction, every route, sha
 - Do not invent clinical services, credentials, testimonials, outcomes, fees or reporting guarantees.
 - This is mainly DESIGN work. No SEO rewrite, keyword exercise, generic component library makeover, or unrequested new marketing copy.
 - Remove decorative eyebrows, kickers, overlines, number labels, redundant chips and duplicated panels. Preserve useful functional labels and semantic structure.
-- **Client instruction (2 November 2026): Do not use any photograph, likeness or portrait of Dr Yameen Qureshi anywhere on the site.** The Webflow portrait is no longer an approved asset. Retain authentic location/architecture imagery; use subtle typographic artwork for the homepage and About profile.
-- Keep design enhancements restrained: delicate paper-like texture, soft arch/contour linework and thoughtful whitespace. No generic medical stock imagery, icons or gimmicks.
+- **Client instruction (2 November 2026): Do not use any photograph, likeness or portrait of Dr Yameen Qureshi anywhere on the site.** The Webflow portrait is no longer an approved asset. Retain authentic location/architecture imagery. **Do not replace the missing photographs with image-sized boxes, abstract typographic artwork panels, cards, ornaments or other placeholders.** Centre the doctor introductory text on both the homepage and About page, with generous negative space.
+- Keep design enhancements restrained and coherent across sections: very light paper-grain dots and fine architectural arch outlines inspired by the Glasgow University cloisters. No generic medical stock imagery, icons, artificial profile cards or visual gimmicks.
+- The sole shared footer is **one cloisters-photo-backed block** on every page: 'Discuss an instruction' on the left, brand plus functional navigation/legal links on the right; stack cleanly on mobile. Do not bring back a separate homepage ContactBanner or a solid-colour footer beneath it.
 - Prefer clear Georgia headings, Arial/system sans text, navy and warm cream; see CODEX_TASK.md.
 - Preserve the footer credit to Allerton Digital and the company's legal information.
 - Verify contrast and mobile layouts.

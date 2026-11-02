@@ -16,7 +16,9 @@ Do not mark DONE without evidence. Update docs/IMPLEMENTATION_LOG.md after perfo
 - [ ] No unnecessary eyebrows, kicker labels, random badges or repeated numbers.
 - [ ] No hidden legacy section content has been brought back.
 - [ ] No photographic likeness of Dr Qureshi anywhere in rendered HTML, CSS, or downloadable site assets.
-- [ ] Typographic profile and About artwork renders consistently; subtle textures add depth without distracting from clinical content.
+- [ ] Homepage doctor introduction and About introduction are centred, with no image placeholders, giant rectangles or substitute artwork panels.
+- [ ] All pages have a *single* cloisters-backed combined CTA + footer: enquiry left, brand/navigation/legal links right (mobile: stacked).
+- [ ] Light paper-grain and fine cloister arch motifs are cohesive across backgrounds, with no interference to text legibility.
 
 ## Links, functionality and content
 - [ ] Header and footer links work, including /instructions (NOT /instruction).

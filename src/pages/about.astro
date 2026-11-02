@@ -2,34 +2,29 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 <BaseLayout title="Dr Yameen Qureshi | Insight Medicolegal" description="Consultant Psychiatrist and independent psychiatric expert witness based in Glasgow.">
-  <section class="inner-page">
+  <section class="inner-page about-page">
     <div class="container">
-      <header class="page-head">
+      <header class="page-head about-page__header">
         <h1>Dr Yameen Qureshi</h1>
         <p class="page-lead">Consultant Psychiatrist and independent psychiatric expert witness based in Glasgow.</p>
       </header>
-      <div class="about-grid">
-        <div class="about-artwork" aria-hidden="true">
-          <p class="about-artwork__quotation">Measured<br />judgement.<br /><em>Clear opinion.</em></p>
-          <span class="about-artwork__signoff">Insight Medicolegal</span>
-        </div>
-        <div class="about-bio">
-          <section class="editorial-section">
-            <h2>Clinical background</h2>
-            <p>Dr Qureshi has dual specialist accreditation in General Adult Psychiatry and Addiction Psychiatry and is based in Glasgow.</p>
-            <p>He was a Consultant Psychiatrist with NHS Lanarkshire from 2010 to 2022 and is lead clinician for General Adult and Addiction Psychiatry at Priory Hospital Glasgow.</p>
-          </section>
-          <section class="editorial-section">
-            <h2>Qualifications &amp; experience</h2>
-            <p>MBBS · MRCPsych · MSc Alcohol and Drug Addiction · FRCPsych.</p>
-            <p>Accreditation as a Civil Expert Witness from the University of Aberdeen and Family Expert Witness Accreditation from Cardiff University.</p>
-          </section>
-          <section class="editorial-section">
-            <h2>Independent psychiatric opinion</h2>
-            <p>His medico-legal work involves psychiatric assessment and reporting for legal, insurance and professional matters. Each instruction is considered on its own clinical and evidential merits.</p>
-            <a class="button button-dark" href="/instructions">Discuss an instruction ↗</a>
-          </section>
-        </div>
+      <div class="about-page__body">
+        <p class="about-page__introduction">Dr Qureshi brings specialist experience in General Adult Psychiatry and Addiction Psychiatry to independent medico-legal assessments and reports.</p>
+        <section class="about-page__section" aria-labelledby="clinical-background">
+          <h2 id="clinical-background">Clinical background</h2>
+          <p>Dr Qureshi has dual specialist accreditation in General Adult Psychiatry and Addiction Psychiatry and is based in Glasgow.</p>
+          <p>He was a Consultant Psychiatrist with NHS Lanarkshire from 2010 to 2022 and is lead clinician for General Adult and Addiction Psychiatry at Priory Hospital Glasgow.</p>
+        </section>
+        <section class="about-page__section" aria-labelledby="qualifications-experience">
+          <h2 id="qualifications-experience">Qualifications &amp; experience</h2>
+          <p>MBBS · MRCPsych · MSc Alcohol and Drug Addiction · FRCPsych.</p>
+          <p>Accreditation as a Civil Expert Witness from the University of Aberdeen and Family Expert Witness Accreditation from Cardiff University.</p>
+        </section>
+        <section class="about-page__section" aria-labelledby="independent-opinion">
+          <h2 id="independent-opinion">Independent psychiatric opinion</h2>
+          <p>His medico-legal work involves psychiatric assessment and reporting for legal, insurance and professional matters. Each instruction is considered on its own clinical and evidential merits.</p>
+          <a class="button button-dark" href="/instructions">Discuss an instruction ↗</a>
+        </section>
       </div>
     </div>
   </section>
