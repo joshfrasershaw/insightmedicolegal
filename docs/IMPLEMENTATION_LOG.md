@@ -15,3 +15,9 @@
 
 ## Codex implementation
 Pending. For each significant change, record date, files changed, reason, actual checks run, result, unresolved issues and relevant PR/preview link. Do not claim tests passed until executed.
+
+## Art direction revision — 2 November 2026
+- Client explicitly requested that no photograph of Dr Yameen Qureshi appear on the website. Removed the homepage CSS portrait and About image and replaced them with CSS-only editorial typographic artwork.
+- Added restrained paper-grain, fine arch/contour and hairline textures to selected sections and internal-page backgrounds; no new image libraries or external scripts.
+- Updated the project instructions and asset policies to ensure future coding agents do not restore the portrait.
+- Build/CI status to be recorded once the revision is checked.

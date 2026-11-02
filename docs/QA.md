@@ -15,7 +15,8 @@ Do not mark DONE without evidence. Update docs/IMPLEMENTATION_LOG.md after perfo
 - [ ] Fonts, colours, whitespace and section geometry are consistent with Webflow.
 - [ ] No unnecessary eyebrows, kicker labels, random badges or repeated numbers.
 - [ ] No hidden legacy section content has been brought back.
-- [ ] Approved profile visual verified before using it.
+- [ ] No photographic likeness of Dr Qureshi anywhere in rendered HTML, CSS, or downloadable site assets.
+- [ ] Typographic profile and About artwork renders consistently; subtle textures add depth without distracting from clinical content.
 
 ## Links, functionality and content
 - [ ] Header and footer links work, including /instructions (NOT /instruction).

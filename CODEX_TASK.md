@@ -3,7 +3,7 @@
 **Execute this brief. Do not merely write a proposal.**
 
 ## Objective
-Recreate the LATEST Insight Medicolegal Webflow design in THIS repository (joshfrasershaw/insightmedicolegal). Make it fast, accessible, mobile-friendly and easy to maintain. Prepare it for Git-connected Cloudflare Pages hosting. Implement the WHOLE website and test it. The current public insightmedicolegal.co.uk design is NOT the approved visual reference.
+Recreate the LATEST Insight Medicolegal Webflow design in THIS repository (joshfrasershaw/insightmedicolegal). Make it fast, accessible, mobile-friendly and easy to maintain. Prepare it for Git-connected Cloudflare Workers static asset hosting. Implement the WHOLE website and test it. The current public insightmedicolegal.co.uk design is NOT the approved visual reference.
 
 The repository is new and independent. Do not confuse it with the separately existing joshfrasershaw/insight React/TanStack site. You may read that older repository for verified business/legal content where available, but do not edit it.
 
@@ -15,6 +15,9 @@ Webflow global design guidance: rules/insight-global-design.md
 Webflow shared components: Insight | Global Header and Insight | Global Footer
 
 When Webflow Designer access exists, inspect the actual current/unpublished site, not solely the last published version. If the Designer is unavailable, implement from this brief and the source/asset documentation without waiting for access. Clearly log any unverified differences. Do not generate dummy medical claims.
+
+## Explicit photography and visual texture instruction (2 November 2026)
+Dr Qureshi does not want photos of himself on the website. Remove any Webflow portrait asset and never reintroduce one in new sections. Give selected backgrounds light paper-like texture and subtle linework, preserving readability, professionalism and the existing restrained palette.
 
 ## Visual design tokens
 - Primary navy: #254659
@@ -30,7 +33,7 @@ When Webflow Designer access exists, inspect the actual current/unpublished site
 - Internal-page H1 roughly clamp(44px, 5vw, 76px).
 - Body typically 16–18px and generous line-height.
 - Readable container approximately 1180px max width, 7–8% desktop gutters, 6–7% mobile gutters.
-- Airy editorial layout, subdued lines/borders, authentic Glasgow/portrait photography and restrained shadows. NOT a hospital brochure, a SaaS interface or a generic template.
+- Airy editorial layout, subdued lines/borders, authentic Glasgow architecture photography and restrained shadows. NOT a hospital brochure, a SaaS interface or a generic template.
 
 ## Global header
 Recreate the floating, white, gently shadowed Webflow navigation pill, max width around 960px and min height around 64px on desktop. Wordmark INSIGHT MEDICOLEGAL on left. Main links: Expertise, About, Instructions, Contact. Dark navy pill CTA: Discuss an instruction ↗. Use real routes from docs/ROUTES.md. On mobile the navigation MUST remain usable, with a tidy two-row/wrapping design if necessary, no sideways overflow, and visible focus states. On internal pages provide room below the floating header.
@@ -44,7 +47,7 @@ Deep navy #102C38; white navigation and pale legal text. One shared component, n
 
 2. **Compact expertise strip.** Warm cream, centred concise line "PTSD · Depression · Anxiety disorders · Personality disorders · Fitness to plead" with a clear text link to the expertise index. Clean transition, not an oversized card.
 
-3. **Editorial expert profile.** Off-white, generous asymmetric split layout. Approved Dr Qureshi profile visual (asset map); tall portrait crop with a softly rounded upper shape, subtle overlay and shadow; large Georgia heading, short practice bio, verified qualifications "MBBS · MRCPsych · MSc · FRCPsych", profile link. On mobile stack and preserve crop.
+3. **Editorial expert profile.** Off-white, generous asymmetric split layout. **No portrait or photograph of Dr Qureshi, at his explicit request.** Use custom CSS-only editorial typographic artwork with delicate architectural arches and fine-line patterning instead of any person. Alongside it, retain the Georgia heading, short practice bio, verified qualifications "MBBS · MRCPsych · MSc · FRCPsych", and profile link. Stack gracefully on mobile.
 
 4. **Eight-area expertise collection.** Warm cream with a large Georgia headline "Specialist psychiatric opinions." Eight named areas: post-traumatic stress disorder; anxiety and depression; addiction psychiatry; chronic pain and psychological injury; personality and adjustment disorders; personal injury and clinical negligence; employment and occupational matters; professional regulation. Each has a short concise description and working link. The Webflow source numbers cards 01–08; use numbers only where they genuinely aid the designed sequence. Do not reintroduce arbitrary numbering to other sections or add cluttered icon cards.
 
@@ -60,7 +63,7 @@ Deep navy #102C38; white navigation and pale legal text. One shared component, n
 
 ## Internal pages
 Use the exact public routes listed in docs/ROUTES.md. They include:
-- About: polished editorial biography, actual approved portrait, existing verified biography/credentials and instruction CTA.
+- About: polished editorial biography, **no portrait or likeness**, subtle typography/arch artwork in lieu of photography, verified biography/credentials and instruction CTA.
 - Expertise index: all eight areas, a clean introduction, restrained bordered editorial cards/blocks linking to details.
 - Eight specialty pages: one reusable editorial template each, correct H1 and opening, useful clinical context, questions/assessments, related links and instruction CTA; preserve facts rather than making medical claims up.
 - Instructions: clear who-can-instruct, what information is needed, assessment/report arrangements, three-step process and professional email/telephone.
