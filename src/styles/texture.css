@@ -1,12 +1,57 @@
-/* Restrained, photo-free textures for the homepage and internal pages. */
-.profile-section{position:relative;padding:48px 0 72px;background:#fff}
+/* Wide, editorial profile treatment: hierarchy instead of empty margins. */
+.profile-section{position:relative;padding:clamp(90px,10vw,145px) 0;background:#fff}
 .profile-section::before,.profile-section::after{display:none}
-.profile-intro{max-width:625px;margin-inline:auto;text-align:center}
-.profile-intro h2{margin:0 auto;font-size:clamp(44px,4.7vw,60px)}
-.profile-intro .qualifications{display:block;margin:0 auto 18px;color:#254659;font:700 10px/1.4 var(--sans);letter-spacing:.065em}
-.profile-intro p{max-width:535px;margin:0 auto 26px;color:#66747a;font:400 15px/1.7 var(--sans)}
-.profile-intro .profile-intro__lead{color:#1a303a;font-size:16px;line-height:1.7}
-.profile-intro .profile-intro__detail{max-width:410px;margin-bottom:0}
+.profile-intro{
+  display:grid;
+  grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);
+  gap:clamp(60px,7vw,120px);
+  align-items:start;
+  width:min(88%,1280px);
+  max-width:none;
+  margin-inline:auto;
+  text-align:left;
+}
+.profile-heading h2{
+  max-width:590px;
+  margin:0 0 30px;
+  font-size:clamp(66px,6vw,100px);
+  line-height:1.04;
+  letter-spacing:-.045em;
+}
+.profile-intro .qualifications{
+  display:block;
+  margin:0;
+  color:#254659;
+  font:700 12px/1.5 var(--sans);
+  letter-spacing:.085em;
+}
+.profile-copy{padding-top:6px;border-top:1px solid #ced8d5}
+.profile-intro .profile-copy p{
+  max-width:650px;
+  margin:26px 0 0;
+  color:#56696f;
+  font:400 17px/1.83 var(--sans);
+}
+.profile-intro .profile-copy .profile-intro__lead{
+  margin-top:30px;
+  color:#172e38;
+  font-size:clamp(20px,1.65vw,24px);
+  line-height:1.57;
+}
+.profile-intro .profile-copy .profile-intro__detail{max-width:650px}
+@media(max-width:920px){
+  .profile-intro{grid-template-columns:1fr;gap:30px}
+  .profile-heading h2{margin-bottom:20px;font-size:clamp(58px,8vw,86px)}
+  .profile-copy{padding-top:0}
+  .profile-intro .profile-copy .profile-intro__lead{margin-top:24px}
+}
+@media(max-width:720px){
+  .profile-section{padding:75px 0 82px}
+  .profile-intro{width:86%;gap:29px}
+  .profile-heading h2{font-size:clamp(49px,10vw,67px)}
+  .profile-intro .profile-copy p{font-size:16px;line-height:1.8}
+  .profile-intro .profile-copy .profile-intro__lead{font-size:19px}
+}
 .credentials-strip{background:#ececea;background-image:none}
 .expertise-section{
   background-color:#f2f0e9;
@@ -44,10 +89,4 @@
 .about-page__section h2{margin:0 auto 19px;font-size:clamp(28px,3vw,42px);}
 .about-page__section p{max-width:680px;margin:0 auto 17px;color:var(--slate);font-size:16px;line-height:1.85;}
 .about-page__section .button{margin-top:17px;}
-@media(max-width:720px){
-  .profile-section{padding:55px 0 62px}
-  .profile-intro h2{font-size:clamp(41px,9vw,56px)}
-  .profile-intro p{font-size:15px}
-  .profile-intro .profile-intro__lead{font-size:16px}
-  .about-page__introduction{font-size:20px}
-}
+@media(max-width:720px){.about-page__introduction{font-size:20px}}
