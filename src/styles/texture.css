@@ -1,4 +1,4 @@
-/* The shared visual language is the fine grain and arch of Glasgow's cloisters. */
+/* Quiet textures and restrained architectural linework, without photographs. */
 .profile-section{
   position:relative;
   isolation:isolate;
@@ -51,11 +51,6 @@
 }
 .expertise-item{transition:background-color .2s ease;}
 .expertise-item:hover{background-color:rgba(255,255,255,.52);}
-.process-copy{
-  background-color:#f9f8f3;
-  background-image:radial-gradient(circle at 1px 1px,rgba(37,70,89,.033) .75px,transparent 1px);
-  background-size:26px 26px;
-}
 .faq-section{
   background-color:#fffefa;
   background-image:
