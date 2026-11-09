@@ -36,7 +36,7 @@
   letter-spacing:.07em;
 }
 .profile-intro .text-link{margin-inline:auto;}
-.expertise-strip{
+ .credentials-strip{
   border-bottom:1px solid rgba(37,70,89,.08);
   background-color:#f6f3ec;
   background-image:radial-gradient(circle at 1px 1px,rgba(37,70,89,.028) .75px,transparent 1px);
