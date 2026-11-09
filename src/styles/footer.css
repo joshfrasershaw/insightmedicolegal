@@ -1,16 +1,11 @@
-/* One image-backed footer: instruction enquiry on the left, full site details on the right. */
-.site-footer--cloisters{
+/* Photo-free footer: restrained contrast and a clear route to make an enquiry. */
+.site-footer--plain{
   position:relative;
   padding:clamp(82px,9vw,132px) 0 clamp(55px,6vw,85px);
   color:#f5f7f5;
   text-align:left;
-  background-color:#102c38;
-  background-image:
-    linear-gradient(100deg,rgba(7,28,38,.91),rgba(9,32,43,.86) 48%,rgba(7,27,37,.9)),
-    url('https://s3.amazonaws.com/webflow-prod-assets/69d54197306f7335172bf4d8/6ad75a09028df0ae44f5e998_HERO-UGalsgow_1127848313.jpg');
-  background-position:center,center 52%;
-  background-size:cover;
-  background-repeat:no-repeat;
+  background:linear-gradient(115deg,#102c38 0%,#173845 100%);
+  border-top:1px solid rgba(225,239,237,.25);
 }
 .site-footer__inner{
   display:grid;
@@ -128,7 +123,7 @@
   .site-footer__navigation{max-width:600px;grid-template-columns:1fr 1fr;}
 }
 @media(max-width:600px){
-  .site-footer--cloisters{padding:76px 0 48px;background-position:center,center;}
+  .site-footer--plain{padding:76px 0 48px;}
   .site-footer__inner{gap:40px;}
   .site-footer__cta h2{font-size:clamp(42px,9vw,56px);}
   .site-footer__cta>p{font-size:16px;}
