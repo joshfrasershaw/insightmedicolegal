@@ -1,4 +1,5 @@
 ---
+import ArrowIcon from './ArrowIcon.astro';
 import { expertise } from '../data/site';
 
 // Six focused entry points on the homepage. All eight subjects remain available
@@ -23,7 +24,7 @@ const featuredReports = featuredSlugs.map(slug => expertise.find(item => item.sl
             <h3>{item.title}</h3>
             <p>{item.summary}</p>
           </div>
-          <span class="expertise-arrow" aria-hidden="true">↗</span>
+          <span class="expertise-arrow" aria-hidden="true"><ArrowIcon /></span>
         </a>
       ))}
     </div>
