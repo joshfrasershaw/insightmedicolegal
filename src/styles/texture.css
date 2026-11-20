@@ -2,7 +2,7 @@
 .profile-section{
   position:relative;
   padding:clamp(70px,7.5vw,112px) 0 clamp(75px,8vw,120px);
-  background:#f2eee8;
+  background:#fff;
   text-align:center;
   overflow:hidden;
 }
@@ -11,7 +11,7 @@
   display:flex;
   flex-direction:column;
   align-items:center;
-  width:min(86%,930px);
+  width:min(86%,850px);
   max-width:none;
   margin:0 auto;
   gap:0;
@@ -34,7 +34,7 @@
   letter-spacing:.055em;
 }
 .profile-copy{
-  max-width:850px;
+  max-width:760px;
   width:100%;
   padding:0;
   border:0;
@@ -43,8 +43,8 @@
 .profile-intro .profile-copy p,
 .profile-intro .profile-copy .profile-intro__lead,
 .profile-intro .profile-copy .profile-intro__detail{
-  max-width:830px;
-  margin:0 auto 17px;
+  max-width:760px;
+  margin:0 auto 22px;
   color:#435f62;
   font:400 clamp(16px,1.25vw,18px)/1.75 var(--sans);
 }
@@ -62,11 +62,8 @@
 }
 .credentials-strip{background:#ececea;background-image:none}
 .expertise-section{
-  background-color:#f2f0e9;
-  background-image:
-    radial-gradient(circle at 1px 1px,rgba(37,70,89,.033) .75px,transparent 1px),
-    linear-gradient(145deg,rgba(204,221,215,.19),transparent 57%);
-  background-size:26px 26px,auto;
+  background-color:#f2f3f0;
+  background-image:none;
 }
 /* Report card interaction is controlled by home.css; avoid a competing hover override. */
 .faq-section{background:#f3f5f2;background-image:none}
