@@ -30,10 +30,10 @@
   flex:1 0 auto;
   display:grid;
   grid-template-columns:minmax(0,1.45fr) minmax(0,.55fr);
-  align-items:end;
+  align-items:center;
   gap:clamp(40px,5vw,90px);
   margin-inline:auto;
-  padding:clamp(155px,20vh,220px) 0 clamp(78px,12vh,135px);
+  padding:clamp(125px,14vh,175px) 0 clamp(55px,7vh,95px);
 }
 .hero-content{min-width:0}
 .home-hero h1{
@@ -169,7 +169,7 @@
   .credentials-grid span{font-size:12px}
 }
 @media(max-width:920px){
-  .hero-shell{grid-template-columns:1fr;gap:34px;align-content:center;padding:170px 0 80px}
+  .hero-shell{grid-template-columns:1fr;gap:34px;align-content:center;padding:145px 0 70px}
   .home-hero h1{max-width:790px;font-size:clamp(65px,9vw,97px)}
   .hero-aside{max-width:600px;padding-left:26px}
   .home-hero .hero-description{max-width:550px}
@@ -184,7 +184,7 @@
   .site-header.is-home .nav-links{order:3;width:100%;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;margin:0}
   .site-header.is-home .nav-links a{font-size:11px;text-align:center}
   .site-header.is-home .nav-cta{order:2;font-size:11px;padding:10px 12px}
-  .hero-shell{width:86%;padding:185px 0 68px;gap:30px}
+  .hero-shell{width:86%;padding:155px 0 68px;gap:30px}
   .home-hero h1{font-size:clamp(54px,10vw,75px)}
   .hero-aside{padding-left:20px}
   .home-hero .hero-description{font-size:16px;line-height:1.65}
