@@ -116,8 +116,18 @@
 .expertise-item h3{margin:0 0 9px;font-size:clamp(26px,2.15vw,34px);line-height:1.16}
 .expertise-item p{max-width:450px;margin:0;color:var(--slate);font:400 15px/1.6 var(--sans)}
 .expertise-arrow{display:block;margin-top:12px;color:var(--navy);font:700 13px/1.4 var(--sans)}
-.process-section{background:#fff}
-.process-inner{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:clamp(70px,8vw,160px);max-width:1160px;padding:118px 0 110px}
+/* One continuous full-width section: introduction left, three report steps right. */
+.process-section{width:100%;background:#fff}
+.process-inner{
+  display:grid;
+  grid-template-columns:minmax(0,2fr) minmax(0,3fr);
+  align-items:start;
+  gap:clamp(48px,7vw,120px);
+  width:min(86%,1370px);
+  max-width:none;
+  padding:clamp(80px,9vw,118px) 0 clamp(80px,9vw,110px);
+}
+.process-copy,.process-steps{min-width:0}
 .process-copy{padding:0;background:none}
 .process-copy h2{max-width:480px;margin:0 0 27px;font-size:clamp(44px,4.2vw,60px)}
 .process-copy>p{max-width:445px;margin:0 0 16px;color:var(--slate);font:400 17px/1.75 var(--sans)}
@@ -176,7 +186,7 @@
   .expertise-item:nth-child(odd){border-right:0}
   .expertise-item:nth-child(even){padding-left:0}
   .expertise-item{min-height:0;padding:26px 0}
-  .process-inner{grid-template-columns:1fr;gap:36px;padding:76px 0}
+  .process-inner{grid-template-columns:minmax(0,1fr);gap:36px;width:86%;padding:76px 0}
   .process-copy h2{font-size:clamp(42px,8vw,54px)}
   .process-steps li{margin-bottom:28px}
   .faq-section{padding:70px 0 78px}
