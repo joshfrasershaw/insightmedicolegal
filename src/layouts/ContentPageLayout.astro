@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HomeLetsTalk from '../components/HomeLetsTalk.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  heading: string;
+  lead: string;
+  contentClass?: string;
+  align?: 'center' | 'left';
+}
+const { title, description, heading, lead, contentClass = '', align = 'center' } = Astro.props;
+---
+<BaseLayout title={title} description={description}>
+  <section class:list={['content-page-hero', { 'content-page-hero--left': align === 'left' }]} aria-labelledby="content-page-heading">
+    <div class="container">
+      <h1 id="content-page-heading">{heading}</h1>
+      <p>{lead}</p>
+    </div>
+  </section>
+
+  <section class:list={['content-page-main', contentClass]} aria-label={heading + ' information'}>
+    <div class="container">
+      <slot />
+    </div>
+  </section>
+
+  <HomeLetsTalk />
+</BaseLayout>
