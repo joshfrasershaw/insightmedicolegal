@@ -1,0 +1,132 @@
+/* Mobile QA: consistent vector icons and intentionally stacked, centred layouts. */
+.ui-arrow{
+  display:inline-block;
+  width:1em;
+  height:1em;
+  flex:none;
+  vertical-align:-.12em;
+  color:inherit;
+}
+.button .ui-arrow,.nav-cta .ui-arrow,.home-guidance-button .ui-arrow,
+.home-talk-button .ui-arrow,.reports-card__link .ui-arrow{
+  width:15px;
+  height:15px;
+  vertical-align:middle;
+}
+.nav-cta{display:inline-flex;align-items:center;justify-content:center;gap:7px}
+.nav-cta__short{display:none}
+.hero-secondary{display:inline-flex;align-items:center;gap:8px}
+.expertise-arrow{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  flex:none;
+  width:36px;
+  height:36px;
+  border:1px solid rgba(245,248,248,.55);
+  border-radius:50%;
+  font-size:initial;
+}
+.expertise-arrow .ui-arrow{width:19px;height:19px}
+.expertise-item .expertise-arrow{align-self:flex-end}
+.home-guidance-button,.home-talk-button{gap:12px}
+.home-guidance-button .ui-arrow,.home-talk-button .ui-arrow{flex:none}
+.reports-card__link{display:inline-flex;align-items:center;gap:5px}
+
+/* Replace the font-dependent tick character with a CSS-drawn check. */
+.why-insight-tick::after{
+  content:"";
+  display:block;
+  width:8px;
+  height:14px;
+  border:solid currentColor;
+  border-width:0 2px 2px 0;
+  transform:translateY(-2px) rotate(45deg);
+}
+
+@media(max-width:920px){
+  .credentials-grid li{min-width:0}
+  .credentials-grid strong,.credentials-grid span{overflow-wrap:break-word}
+}
+@media(max-width:720px){
+  .site-header .nav-pill{
+    max-width:100%;
+    align-items:center;
+    row-gap:9px;
+  }
+  .site-header .nav-links a{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-width:0;
+    min-height:36px;
+    padding:5px 2px;
+    line-height:1.25;
+    white-space:normal;
+  }
+  .nav-cta__full{display:none}
+  .nav-cta__short{display:inline}
+  .hero-shell,.home-guidance-inner,.home-report-covers-inner,
+  .home-clear-inner,.why-insight-inner{margin-left:auto;margin-right:auto}
+  .home-hero h1{overflow-wrap:normal}
+  .hero-actions{max-width:100%}
+  .expertise-list{width:100%}
+  .expertise-item{min-width:0}
+  .home-guidance-panel,.home-guidance-process,.home-guidance-info-wide{min-width:0}
+  .home-talk-inner{width:100%;margin-inline:auto}
+  .site-footer__bottom{overflow-wrap:anywhere}
+  .content-page-main .content-page-actions .button{justify-content:center;text-align:center}
+}
+@media(max-width:620px){
+  /* The desktop four-item strip becomes a centred vertical list, not a cramped horizontal bar. */
+  .credentials-grid{
+    width:min(86%,470px);
+    grid-template-columns:minmax(0,1fr);
+    padding:8px 0;
+  }
+  .credentials-grid li,
+  .credentials-grid li:nth-child(odd){
+    align-items:center;
+    text-align:center;
+    border:0;
+    border-top:1px solid #c4cecc;
+    padding:14px 12px;
+    gap:3px;
+  }
+  .credentials-grid li:nth-child(-n+2){border-top:1px solid #c4cecc}
+  .credentials-grid li:first-child{border-top:0}
+  .credentials-grid li:last-child{padding-right:12px}
+  .credentials-grid strong{font-size:14px}
+  .credentials-grid span{font-size:12px;line-height:1.45}
+  /* Give the report title the whole card width and keep its arrow predictably positioned. */
+  .expertise-item{
+    flex-direction:column;
+    align-items:stretch;
+    justify-content:space-between;
+    min-height:0;
+    gap:18px;
+    padding:25px;
+  }
+  .expertise-item h3{margin-bottom:13px}
+  .expertise-arrow{align-self:flex-end}
+  .home-guidance-button{width:100%;min-height:50px;text-align:center;padding:12px 15px}
+  .home-talk-actions{flex-direction:column;gap:17px}
+  .home-talk-button{justify-content:center;min-width:min(100%,250px);gap:17px}
+  .home-talk-phone{display:inline-block}
+  .site-footer__brand{text-align:center}
+  .site-footer__descriptor{margin:17px auto 0}
+  .site-footer__pages,.site-footer__policies{width:100%;max-width:360px;margin-inline:auto}
+  .site-footer__bottom{justify-content:center;text-align:center}
+  .site-footer__bottom p{width:100%}
+  .content-page-main .content-page-actions{align-items:stretch}
+}
+@media(max-width:380px){
+  .site-header .nav-pill{gap:8px;padding:10px 11px}
+  .site-header .nav-cta{padding:10px}
+  .site-header .nav-links{gap:2px}
+  .site-header .nav-links a{font-size:10.5px}
+  .home-hero h1{font-size:clamp(39px,11.5vw,44px)}
+  .hero-shell{padding-top:158px}
+  .expertise-item{padding:23px}
+  .home-guidance-panel{padding:25px}
+}
