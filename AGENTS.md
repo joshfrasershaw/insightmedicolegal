@@ -51,6 +51,13 @@ This newer client instruction supersedes the older page-specific Webflow section
 - Use responsive card grids only where they help the content: four/two/one columns for the eight-report index, three/one for process steps, appropriate editorial layouts elsewhere.
 - Preserve approved client copy, qualifications, instructions, professional restrictions, reporting/fees wording, contact data and legal notices. Do not introduce new unsupported medical statements.
 
+## Mobile interface baseline — 20 November 2026
+- Use `src/components/ArrowIcon.astro` for diagonal-arrow affordances. Do not use Unicode `↗` glyphs; they render inconsistently on mobile devices.
+- Keep the four credentials items four-across on desktop, two-across on tablet, and a centred one-column stack on narrow phones.
+- Report cards must be full-width on mobile with a predictable bottom-right vector arrow, never a font-dependent symbol.
+- Buttons, navigation, report headings, first-enquiry email links and the shared footer must remain within 320px-wide viewports without sideways scrolling.
+- Run `node scripts/mobile-layout-smoke.mjs` after `npm run build`. CI runs this against 320px, 390px and 768px viewports across homepage, reports, About, instructions, Contact, one specialist page and the privacy notice, and saves actual mobile screenshots.
+
 ## Technical boundaries
 - Use Astro + TypeScript with STATIC output for Cloudflare Pages. Do not introduce server-side rendering or a large client-side framework without a genuine requirement.
 - Centralise tokens, data and reusable components. No giant copy-and-pasted page components.
