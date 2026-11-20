@@ -8,3 +8,85 @@
     </ul>
   </div>
 </section>
+
+<style>
+  /* Keep the complete styling with this component so markup and CSS ship together. */
+  .why-insight-section {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    width: 100%;
+    padding: clamp(64px, 5vw, 92px) 0 clamp(70px, 5.5vw, 105px);
+    background: linear-gradient(115deg, #254659 0%, #203f51 58%, #193746 100%);
+    color: #f6f8f7;
+  }
+  .why-insight-section::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 65%;
+    aspect-ratio: 1;
+    left: -12%;
+    top: -50%;
+    border: 1px solid rgba(255,255,255,.045);
+    border-radius: 50%;
+    box-shadow: 0 0 0 115px rgba(255,255,255,.012), 0 0 0 240px rgba(255,255,255,.012);
+    pointer-events: none;
+  }
+  .why-insight-inner {
+    width: min(88%, 1370px);
+    margin-inline: auto;
+  }
+  .why-insight-section h2 {
+    margin: 0 0 clamp(35px, 4vw, 56px);
+    color: #f6f8f7;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(36px, 4.2vw, 60px);
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: -.045em;
+  }
+  .why-insight-points {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(24px, 3vw, 55px);
+    align-items: start;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .why-insight-points li {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    gap: 17px;
+    color: #f6f8f7;
+    font: 400 clamp(15px, 1.15vw, 18px)/1.55 Arial, Helvetica, sans-serif;
+  }
+  .why-insight-tick {
+    display: grid;
+    flex: 0 0 36px;
+    width: 36px;
+    height: 36px;
+    place-items: center;
+    border: 1px solid rgba(255,255,255,.85);
+    border-radius: 50%;
+    color: #fff;
+    font: 400 23px/1 Arial, Helvetica, sans-serif;
+  }
+  @media (max-width: 920px) {
+    .why-insight-points {
+      grid-template-columns: minmax(0, 1fr);
+      max-width: 570px;
+      margin-inline: auto;
+      gap: 24px;
+    }
+    .why-insight-section h2 { margin-bottom: 35px; }
+  }
+  @media (max-width: 500px) {
+    .why-insight-inner { width: 86%; }
+    .why-insight-points li { gap: 15px; }
+    .why-insight-tick { flex-basis: 32px; width: 32px; height: 32px; font-size: 20px; }
+  }
+</style>
