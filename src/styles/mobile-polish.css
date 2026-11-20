@@ -130,3 +130,58 @@
   .expertise-item{padding:23px}
   .home-guidance-panel{padding:25px}
 }
+
+
+/*
+ * 20 Nov 2026: second-pass mobile proportions based on actual iPhone screenshots.
+ * Keep the editorial hierarchy, but avoid an unnecessarily tall first viewport.
+ */
+@media(max-width:620px){
+  .site-header.is-home .nav-pill{
+    padding:10px 12px;
+    gap:9px;
+  }
+  .site-header.is-home .nav-links a{min-height:32px}
+  .home-hero{min-height:0}
+  .hero-shell{
+    flex:0 1 auto;
+    gap:24px;
+    padding:137px 0 47px;
+  }
+  .home-hero h1{
+    font-size:clamp(43px,11vw,49px);
+    line-height:1.06;
+    letter-spacing:-.04em;
+  }
+  .hero-aside{padding-left:16px}
+  .home-hero .hero-description{
+    margin-bottom:23px;
+    font-size:16px;
+    line-height:1.58;
+  }
+  .hero-actions{gap:14px}
+  .credentials-grid li,.credentials-grid li:nth-child(odd){padding:11px 10px}
+  .credentials-grid li:last-child{padding-right:10px}
+  .profile-section{padding:54px 0 65px}
+  .profile-heading h2{
+    font-size:clamp(37px,9.4vw,42px);
+    line-height:1.12;
+    letter-spacing:-.035em;
+    text-wrap:balance;
+  }
+  .profile-intro .qualifications{margin-bottom:21px}
+  .profile-intro .profile-copy p,
+  .profile-intro .profile-copy .profile-intro__lead,
+  .profile-intro .profile-copy .profile-intro__detail{
+    max-width:39ch;
+    margin-bottom:17px;
+    line-height:1.7;
+  }
+  .content-page-hero{padding:146px 0 68px}
+  .content-page-hero h1{font-size:clamp(40px,8.4vw,52px)}
+}
+@media(max-width:380px){
+  .hero-shell{padding-top:137px}
+  .home-hero h1{font-size:clamp(40px,11.2vw,43px)}
+  .site-header.is-home .nav-pill{padding:9px 11px}
+}
