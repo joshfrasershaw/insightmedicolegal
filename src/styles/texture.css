@@ -21,7 +21,7 @@
 .profile-heading h2{
   max-width:none;
   margin:0 0 18px;
-  color:#19454c;
+  color:var(--navy);
   font-size:clamp(48px,5.3vw,78px);
   line-height:1.1;
   letter-spacing:-.045em;
@@ -60,10 +60,10 @@
     line-height:1.75;
   }
 }
-.credentials-strip{background:#ececea;background-image:none}
+.credentials-strip{background:var(--light-blue);background-image:none}
 /* Report section background and card states are controlled by home.css. */
 /* Report card interaction is controlled by home.css; avoid a competing hover override. */
-.faq-section{background:#f2f3f0;background-image:none}
+.faq-section{background:var(--light-blue);background-image:none}
 .inner-page{
   background-color:#f8f7f2;
   background-image:
