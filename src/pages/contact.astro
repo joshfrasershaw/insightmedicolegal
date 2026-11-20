@@ -1,4 +1,5 @@
 ---
+import ArrowIcon from '../components/ArrowIcon.astro';
 import ContentPageLayout from '../layouts/ContentPageLayout.astro';
 import { site } from '../data/site';
 ---
@@ -23,7 +24,7 @@ import { site } from '../data/site';
       <h2>First enquiry</h2>
       <p>A short outline of the case is enough to get started. Mention a deadline if you have one.</p>
       <p>Don't send medical records until you've agreed a secure way to send them.</p>
-      <a class="button content-page-button--accent" href={'mailto:' + site.email}>Send an email ↗</a>
+      <a class="button content-page-button--accent" href={'mailto:' + site.email}>Send an email <ArrowIcon /></a>
     </div>
   </div>
 </ContentPageLayout>
