@@ -1,4 +1,5 @@
 ---
+import ArrowIcon from '../components/ArrowIcon.astro';
 import ContentPageLayout from '../layouts/ContentPageLayout.astro';
 import { site } from '../data/site';
 ---
@@ -27,7 +28,7 @@ import { site } from '../data/site';
   </div>
   <p class="content-page-note instructions-security">Do not email medical records until a secure way to send them has been agreed.</p>
   <div class="content-page-actions">
-    <a class="button content-page-button--accent" href={'mailto:' + site.email}>Email Dr Qureshi ↗</a>
-    <a class="button button-dark" href={site.phoneHref}>Call {site.phone} ↗</a>
+    <a class="button content-page-button--accent" href={'mailto:' + site.email}>Email Dr Qureshi <ArrowIcon /></a>
+    <a class="button button-dark" href={site.phoneHref}>Call {site.phone} <ArrowIcon /></a>
   </div>
 </ContentPageLayout>
