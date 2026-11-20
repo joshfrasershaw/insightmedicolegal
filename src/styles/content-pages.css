@@ -1,0 +1,159 @@
+/* Shared editorial content-page system: navy hero, light content, navy enquiry CTA and shared footer. */
+.content-page-hero{
+  padding:clamp(156px,14vw,198px) 0 clamp(76px,7vw,103px);
+  background:linear-gradient(120deg,#234255 0%,#1d4653 50%,#234255 100%);
+  color:#fff;
+  text-align:center;
+}
+.content-page-hero h1{
+  max-width:960px;
+  margin:0 auto 22px;
+  color:#fff;
+  font:400 clamp(48px,5.8vw,82px)/1.12 var(--serif);
+  letter-spacing:-.04em;
+}
+.content-page-hero p{
+  max-width:740px;
+  margin:0 auto;
+  color:#dce8eb;
+  font:400 clamp(16px,1.45vw,19px)/1.72 var(--sans);
+}
+.content-page-hero--left{text-align:left}
+.content-page-hero--left h1,.content-page-hero--left p{margin-left:0;margin-right:0}
+.content-page-main{
+  padding:clamp(76px,7vw,112px) 0 clamp(84px,7vw,116px);
+  background:#fff;
+  color:var(--ink);
+}
+.content-page-main h2{color:var(--navy)}
+.content-page-main p{line-height:1.8}
+.content-page-main .content-page-actions{display:flex;flex-wrap:wrap;align-items:center;gap:13px;margin-top:28px}
+.content-page-main .content-page-button--accent{background:var(--cta);color:#102e38;border-color:var(--cta)}
+.content-page-main .content-page-button--accent:hover{background:#ffd083;border-color:#ffd083}
+.content-page-main .content-page-note{
+  padding:22px 26px;
+  background:var(--light-blue);
+  border:1px solid #d7e2e8;
+  border-radius:5px;
+  color:var(--slate);
+}
+.content-page-main .content-page-note p:last-child{margin-bottom:0}
+
+/* About: editorial biography paired with a clearly distinguished qualifications rail. */
+.about-feature{
+  display:grid;
+  grid-template-columns:minmax(0,1.65fr) minmax(265px,.78fr);
+  gap:clamp(44px,7vw,100px);
+  align-items:start;
+  width:min(100%,1050px);
+  margin:0 auto;
+}
+.about-feature__copy h2{margin:0 0 23px;font-size:clamp(34px,3.4vw,48px)}
+.about-feature__copy p{margin:0 0 20px;color:var(--slate);font-size:16px}
+.about-feature__qualifications{
+  padding:clamp(28px,3vw,42px);
+  background:var(--navy);
+  color:#e0eaed;
+  border-radius:5px;
+}
+.about-feature__qualifications h2{margin:0 0 22px;color:#fff;font-size:clamp(29px,2.8vw,37px)}
+.about-feature__qualifications p{margin:0 0 19px;color:#e0eaed;font-size:15px}
+.about-feature__qualifications p:last-child{margin-bottom:0}
+.about-feature__note{width:min(100%,1050px);margin:42px auto 0}
+.about-feature__note h2{margin:0 0 7px;font-size:27px}
+.about-feature__note p{font-size:15px}
+
+/* How it works: short steps, secure-records notice and two direct enquiry options. */
+.content-page-main .instructions-points{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
+  margin:0 0 22px;
+}
+.content-page-main .instruction-point{
+  min-height:208px;
+  padding:clamp(27px,3vw,37px);
+  background:#f9fbfc;
+  border:1px solid var(--line);
+  border-radius:5px;
+}
+.content-page-main .instruction-point h3{font-size:clamp(26px,2.2vw,33px)}
+.content-page-main .instruction-point p{font-size:15px}
+.content-page-main .instruction-point span{margin-bottom:23px;color:#627d89;font-weight:700}
+.content-page-main .instructions-security{margin:0}
+
+/* Contact: functional contact methods and a soft-blue first-enquiry panel. */
+.content-page-main .contact-grid{gap:22px;align-items:stretch}
+.content-page-main .contact-detail{border-radius:5px;background:#f9fbfc}
+.content-page-main .contact-detail h2{font-size:30px}
+.content-page-main .contact-note{padding:clamp(30px,3.5vw,45px);border-radius:5px;background:var(--light-blue)}
+.content-page-main .contact-note h2{font-size:34px}
+.content-page-main .contact-note .button{margin-top:9px}
+
+/* Specialist and location pages: specific editorial copy, not generic cards. */
+.content-page-main.report-page .report-page__body{margin:0 auto;width:min(100%,830px)}
+.content-page-main.report-page .report-page__body h2{font-size:clamp(30px,3vw,43px)}
+.content-page-main.report-page .report-page__list{margin-bottom:30px}
+.content-page-main.report-page .report-page__body .content-page-note{margin:0 0 27px}
+.content-page-main.report-page .report-page__body .button{margin-top:4px}
+
+/* Reports index: shared hero/body/CTA system, keeping its eight report tiles. */
+.content-page-main .reports-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.content-page-main .reports-card{
+  display:flex;flex-direction:column;justify-content:space-between;gap:28px;
+  min-height:265px;padding:clamp(22px,2.2vw,30px);
+  background:#fdfefe;border:1px solid var(--line);border-radius:5px;
+  color:var(--ink);text-decoration:none;
+  transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;
+}
+.content-page-main .reports-card:hover{
+  transform:translateY(-3px);border-color:#aabfc9;
+  box-shadow:0 12px 24px rgba(16,37,46,.085);text-decoration:none;
+}
+.content-page-main .reports-card:focus-visible{outline:3px solid #71b0ff;outline-offset:4px}
+.content-page-main .reports-card h2{
+  margin:0 0 14px;color:var(--navy);
+  font:400 clamp(23px,2.1vw,29px)/1.2 var(--serif);letter-spacing:-.025em;
+  overflow-wrap:break-word;
+}
+.content-page-main .reports-card p{margin:0;color:var(--slate);font:400 14px/1.65 var(--sans)}
+.content-page-main .reports-card__link{margin-top:auto;color:var(--navy);font:700 13px/1.4 var(--sans)}
+.content-page-main .reports-card__link span{display:inline-block;margin-left:3px;transition:transform .2s ease}
+.content-page-main .reports-card:hover .reports-card__link span{transform:translate(2px,-2px)}
+.content-page-main .reports-note{margin:24px 0 0;font-size:14px}
+
+/* Legal/reference pages use the same page framing while remaining easy to read. */
+.content-page-main .legal-content{max-width:820px;margin:0 auto}
+.content-page-main .legal-content h2{font-size:clamp(27px,2.7vw,34px)}
+.content-page-main .legal-content a:not(.button){color:var(--navy);text-underline-offset:4px}
+.content-page-main .legal-content .small-print{font-size:13px;color:var(--slate)}
+.content-page-main .legal-table{display:block;max-width:100%;overflow-x:auto;border-collapse:collapse}
+.content-page-main .legal-table th,.content-page-main .legal-table td{padding:13px 16px;border:1px solid var(--line);text-align:left;vertical-align:top}
+.content-page-main .legal-table th{background:var(--light-blue)}
+
+/* Responsive hierarchy stays consistent across every content page. */
+@media(max-width:1050px){
+  .content-page-main .reports-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .content-page-main .reports-card{min-height:220px}
+}
+@media(max-width:820px){
+  .about-feature{grid-template-columns:1fr;gap:35px}
+  .about-feature__qualifications{max-width:none}
+  .content-page-main .instructions-points{grid-template-columns:1fr;gap:15px}
+  .content-page-main .instruction-point{min-height:0}
+  .content-page-main .contact-grid{grid-template-columns:1fr}
+}
+@media(max-width:720px){
+  .content-page-hero{padding:82px 0 78px}
+  .content-page-hero h1{font-size:clamp(43px,8vw,60px)}
+  .content-page-main{padding:65px 0 80px}
+  .about-feature__copy p{font-size:16px}
+}
+@media(max-width:590px){
+  .content-page-main .reports-grid{grid-template-columns:1fr;gap:13px}
+  .content-page-main .reports-card{min-height:185px;padding:25px}
+  .content-page-main .reports-card h2{font-size:26px}
+  .content-page-main .content-page-actions .button{width:100%}
+}
+@media(prefers-reduced-motion:reduce){
+  .content-page-main .reports-card,.content-page-main .reports-card__link span{transition:none}
+}
