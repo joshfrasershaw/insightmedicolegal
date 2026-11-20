@@ -1,0 +1,91 @@
+<section class="home-report-covers" aria-labelledby="report-covers-title">
+  <div class="home-report-covers-inner">
+    <h2 id="report-covers-title">What a report covers.</h2>
+    <div class="home-report-covers-columns">
+      <div class="home-report-covers-column">
+        <h3>For pursuer solicitors</h3>
+        <ul>
+          <li>Diagnosis, causation and prognosis</li>
+          <li>Opinion on the need for treatment</li>
+          <li>Capacity for work</li>
+          <li>The psychiatric element of the claim</li>
+        </ul>
+      </div>
+      <div class="home-report-covers-column">
+        <h3>For defender solicitors</h3>
+        <ul>
+          <li>Pre-existing psychiatric history</li>
+          <li>Apportionment</li>
+          <li>Consistency between reported symptoms and the records</li>
+          <li>Likely prognosis and review of an opposing report</li>
+        </ul>
+      </div>
+    </div>
+    <p class="home-report-covers-additional"><strong>Other matters:</strong> Instructions concerning fitness to practise, criminal law, family law and immigration may also be considered where they fall within Dr Qureshi's expertise.</p>
+  </div>
+</section>
+
+<style>
+  .home-report-covers {
+    background: #fff;
+    color: var(--ink);
+    padding: clamp(76px, 7.5vw, 116px) 0 clamp(80px, 7.5vw, 116px);
+  }
+  .home-report-covers-inner {
+    width: min(86%, 1180px);
+    margin-inline: auto;
+  }
+  .home-report-covers h2 {
+    margin: 0 0 clamp(38px, 4.5vw, 66px);
+    color: var(--navy);
+    text-align: center;
+    font: 400 clamp(43px, 4.7vw, 66px)/1.12 var(--serif);
+    letter-spacing: -.035em;
+  }
+  .home-report-covers-columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(40px, 7vw, 110px);
+  }
+  .home-report-covers-column h3 {
+    margin: 0 0 24px;
+    color: var(--navy);
+    font: 400 clamp(26px, 2.5vw, 35px)/1.2 var(--serif);
+  }
+  .home-report-covers-column ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .home-report-covers-column li {
+    position: relative;
+    padding: 0 0 0 23px;
+    margin: 0 0 18px;
+    color: var(--slate);
+    font: 400 clamp(15px, 1.2vw, 17px)/1.65 var(--sans);
+  }
+  .home-report-covers-column li::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: .75em;
+    left: 1px;
+    border-radius: 50%;
+    background: var(--navy);
+  }
+  .home-report-covers-additional {
+    padding: 24px clamp(24px, 3vw, 38px);
+    margin: clamp(26px, 3vw, 40px) 0 0;
+    background: var(--light-blue);
+    border-radius: 7px;
+    color: var(--ink);
+    font: 400 clamp(15px, 1.15vw, 17px)/1.7 var(--sans);
+  }
+  .home-report-covers-additional strong {font-weight: 700;}
+  @media(max-width:760px) {
+    .home-report-covers-columns {grid-template-columns: 1fr;gap: 28px;}
+    .home-report-covers-column h3 {margin-bottom: 20px;}
+    .home-report-covers-column li {margin-bottom: 15px;}
+  }
+</style>
