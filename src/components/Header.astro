@@ -9,6 +9,6 @@ const path = Astro.url.pathname.replace(/\/$/, '') || '/';
     <div class="nav-links">
       {mainNav.map(item => <a href={item.href} aria-current={path === item.href ? 'page' : undefined}>{item.label}</a>)}
     </div>
-    <a class="nav-cta" href="/contact">Ask about a report <span aria-hidden="true"><ArrowIcon /></span></a>
+    <a class="nav-cta" href="/contact" aria-label="Ask about a report"><span class="nav-cta__full">Ask about a report</span><span class="nav-cta__short" aria-hidden="true">Enquire</span><ArrowIcon /></a>
   </nav>
 </header>
