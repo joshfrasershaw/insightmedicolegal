@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import ContentPageLayout from '../layouts/ContentPageLayout.astro';
 import { expertise } from '../data/site';
 import { reportCopy } from '../data/reportCopy';
 
@@ -18,21 +18,19 @@ const { item } = Astro.props;
 const copy = reportCopy[item.slug];
 const locationPage = item.slug === 'glasgow' || item.slug === 'edinburgh';
 ---
-<BaseLayout title={item.title + ' | Insight Medicolegal'} description={copy.intro}>
-  <section class="inner-page report-page">
-    <div class="container">
-      <header class="page-head report-page__header">
-        <h1>{item.title}</h1>
-        <p class="page-lead">{copy.intro}</p>
-      </header>
-      <div class="report-page__body">
-        <h2>{locationPage ? 'Types of cases' : 'What a report can cover'}</h2>
-        <ul class="report-page__list">
-          {copy.points.map(point => <li>{point}</li>)}
-        </ul>
-        {copy.note && <p class="report-page__note">{copy.note}</p>}
-        <a class="button button-dark" href="/contact">Ask about a report ↗</a>
-      </div>
-    </div>
-  </section>
-</BaseLayout>
+<ContentPageLayout
+  title={item.title + ' | Insight Medicolegal'}
+  description={copy.intro}
+  heading={item.title}
+  lead={copy.intro}
+  contentClass="report-page"
+>
+  <div class="report-page__body">
+    <h2>{locationPage ? 'Types of cases' : 'What a report can cover'}</h2>
+    <ul class="report-page__list">
+      {copy.points.map(point => <li>{point}</li>)}
+    </ul>
+    {copy.note && <p class="report-page__note content-page-note">{copy.note}</p>}
+    <a class="button content-page-button--accent" href="/contact">Ask about a report ↗</a>
+  </div>
+</ContentPageLayout>
