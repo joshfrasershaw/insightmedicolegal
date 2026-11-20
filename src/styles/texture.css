@@ -63,7 +63,7 @@
 .credentials-strip{background:var(--light-blue);background-image:none}
 /* Report section background and card states are controlled by home.css. */
 /* Report card interaction is controlled by home.css; avoid a competing hover override. */
-.faq-section{background:var(--light-blue);background-image:none}
+.faq-section{background:#ffffff;background-image:none}
 .inner-page{
   background-color:#f8f7f2;
   background-image:
