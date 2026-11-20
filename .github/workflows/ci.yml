@@ -21,3 +21,12 @@ jobs:
         run: npm run build
       - name: Check privacy and consent on built pages
         run: npm run test:compliance
+      - name: Test mobile layouts in headless Chrome
+        run: node scripts/mobile-layout-smoke.mjs
+      - name: Save mobile browser screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: insight-mobile-screenshots
+          path: artifacts/mobile-qa/*.png
+          if-no-files-found: ignore
