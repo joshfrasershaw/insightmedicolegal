@@ -41,3 +41,11 @@ Pending. For each significant change, record date, files changed, reason, actual
 - Added a complete cookie preference UI, persistent necessary-choice record, settings dialog, necessary/analytics/advertising categories, re-open buttons and no pre-consent tracking.
 - Current site intentionally has no analytics/advertising integrations; those categories are disabled. See docs/COMPLIANCE.md before installing third-party scripts.
 - Practice-specific records/providers/retention/contract terms must be verified against actual operations; code cannot certify them.
+
+## Shared internal content-page redesign — 20 November 2026
+- Created `src/layouts/ContentPageLayout.astro` and `src/styles/content-pages.css`, imported after existing styles.
+- Standardised all non-home routes: navy hero with page title/subtitle, white middle content section using light-blue panels and orange primary actions, existing HomeLetsTalk navy contact section, and shared footer.
+- Updated About (approved three-paragraph biography and qualifications), How it works, Contact, Types of reports, the eight specialist pages plus Glasgow/Edinburgh (shared dynamic slug route), privacy/cookie/terms/accessibility pages and custom 404.
+- Preserved approved content and professional restrictions; retained all report links and contact targets. Added four-column reports index with two-column tablet and one-column mobile states.
+- Source verification: fetched changed files back from GitHub and checked common layout usage, CSS selectors, import order and route templates.
+- **Checks not executed:** npm install, Astro check/build, browser/mobile visual QA and Cloudflare deployment verification. These need a build-capable runtime or deployment preview.
