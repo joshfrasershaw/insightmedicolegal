@@ -1,4 +1,5 @@
 ---
+import ArrowIcon from '../components/ArrowIcon.astro';
 import ContentPageLayout from '../layouts/ContentPageLayout.astro';
 import { expertise } from '../data/site';
 import { reportCopy } from '../data/reportCopy';
@@ -31,6 +32,6 @@ const locationPage = item.slug === 'glasgow' || item.slug === 'edinburgh';
       {copy.points.map(point => <li>{point}</li>)}
     </ul>
     {copy.note && <p class="report-page__note content-page-note">{copy.note}</p>}
-    <a class="button content-page-button--accent" href="/contact">Ask about a report ↗</a>
+    <a class="button content-page-button--accent" href="/contact">Ask about a report <ArrowIcon /></a>
   </div>
 </ContentPageLayout>
