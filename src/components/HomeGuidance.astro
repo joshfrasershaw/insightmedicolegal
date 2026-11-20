@@ -1,102 +1,147 @@
 <section class="home-guidance" aria-labelledby="home-guidance-title">
   <div class="home-guidance-inner">
-    <header class="home-guidance-heading">
-      <h2 id="home-guidance-title">Instructing Dr Qureshi</h2>
-      <p>A straightforward route from your first enquiry to a psychiatric expert report. Each instruction begins with an availability and conflict check, and Dr Qureshi's opinion remains independent of the party instructing him.</p>
-    </header>
+    <div class="home-guidance-top">
+      <aside class="home-guidance-panel">
+        <h2 id="home-guidance-title">Instructing Dr Qureshi</h2>
+        <p>From an initial enquiry to an independent psychiatric expert report, the process begins with understanding the case and agreeing what is needed.</p>
+        <a class="home-guidance-button" href="mailto:instructions@insightmedicolegal.co.uk?subject=Expert%20report%20enquiry">Ask about a report <span aria-hidden="true">↗</span></a>
+      </aside>
 
-    <div class="home-guidance-cards">
-      <article class="home-guidance-card">
-        <h3>Discuss your instruction</h3>
-        <p>Send a brief outline of the case and any deadline. Once availability and the scope of the opinion are agreed, fees and timescales can be confirmed and a letter of instruction provided.</p>
-        <p class="home-guidance-card-detail">Medical records are transferred securely once an appropriate method has been agreed.</p>
+      <div class="home-guidance-process">
+        <article class="home-guidance-step">
+          <h3>Availability and conflicts</h3>
+          <p>Outline the case and any deadline so availability can be checked and potential conflicts of interest considered.</p>
+        </article>
+        <article class="home-guidance-step">
+          <h3>Letter of instruction</h3>
+          <p>Agree the scope of the expert report, the records to be reviewed, fees and reporting expectations.</p>
+        </article>
+        <article class="home-guidance-step">
+          <h3>Psychiatric assessment</h3>
+          <p>The assessment is arranged in person in Glasgow, at an agreed venue elsewhere in Scotland, or by secure video link where clinically appropriate.</p>
+        </article>
+        <article class="home-guidance-step">
+          <h3>Report and follow-up</h3>
+          <p>Reports are typically provided within two to four weeks of assessment. Urgent instructions can be considered. Supplementary or joint reports, and attendance at proof, are available where required.</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="home-guidance-bottom">
+      <article class="home-guidance-info">
+        <h3>Where assessments take place</h3>
+        <p>Assessments may be arranged at the Glasgow office, at an agreed venue elsewhere in Scotland, or remotely by secure video link where clinically appropriate.</p>
       </article>
-      <article class="home-guidance-card">
-        <h3>Arrange an assessment</h3>
-        <p>A psychiatric assessment can take place at the Glasgow office, at an agreed venue elsewhere in Scotland, or remotely by secure video link where clinically appropriate.</p>
-        <p class="home-guidance-card-detail">The arrangements depend on the individual circumstances and clinical requirements of the case.</p>
-      </article>
-      <article class="home-guidance-card">
-        <h3>Receive the report</h3>
-        <p>Reports are typically completed within two to four weeks of the assessment, with the reporting deadline agreed when the instruction is accepted. Urgent instructions can be considered.</p>
-        <p class="home-guidance-card-detail">Supplementary and joint reports, and attendance at proof, are available where required.</p>
+      <article class="home-guidance-info">
+        <h3>Independent expert opinion</h3>
+        <p>Dr Qureshi provides impartial psychiatric opinions for pursuer and defender instructions. His overriding duty is to the court or tribunal, not the instructing party.</p>
       </article>
     </div>
-    <a class="home-guidance-link" href="/instructions">More about instructing Dr Qureshi <span aria-hidden="true">↗</span></a>
   </div>
 </section>
 
 <style>
-  .home-guidance{
-    background:#fff;
-    color:#10252e;
-    padding:clamp(78px,7.5vw,118px) 0 clamp(82px,8vw,128px);
+  .home-guidance {
+    background: #ffffff;
+    color: #10252e;
+    padding: clamp(78px, 7vw, 110px) 0 clamp(82px, 7.5vw, 118px);
   }
-  .home-guidance-inner{width:min(90%,1480px);margin:0 auto}
-  .home-guidance-heading{max-width:860px;margin:0 auto clamp(38px,4.5vw,64px);text-align:center}
-  .home-guidance-heading h2{
-    margin:0 0 22px;
-    color:#10252e;
-    font:400 clamp(45px,5.1vw,75px)/1.1 Georgia,'Times New Roman',serif;
-    letter-spacing:-.035em;
+  .home-guidance-inner {
+    width: min(88%, 1370px);
+    margin: 0 auto;
   }
-  .home-guidance-heading p{
-    max-width:730px;
-    margin:0 auto;
-    color:#43545a;
-    font:400 clamp(16px,1.3vw,19px)/1.75 Arial,Helvetica,sans-serif;
+  .home-guidance-top {
+    display: grid;
+    grid-template-columns: minmax(280px, 420px) minmax(0, 1fr);
+    gap: clamp(28px, 4vw, 54px);
+    align-items: stretch;
   }
-  .home-guidance-cards{
-    display:grid;
-    grid-template-columns:repeat(3,minmax(0,1fr));
-    gap:clamp(15px,2vw,27px);
-    align-items:stretch;
+  .home-guidance-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #254659;
+    color: #f7f8f7;
+    padding: clamp(34px, 3.2vw, 48px);
+    border-radius: 46px 0 46px 0;
   }
-  .home-guidance-card{
-    display:flex;
-    flex-direction:column;
-    gap:0;
-    min-width:0;
-    padding:clamp(28px,3vw,48px);
-    border:1px solid #e0e6e6;
-    border-radius:10px;
-    background:#f2f3f0;
+  .home-guidance-panel h2 {
+    margin: 0 0 22px;
+    color: #ffffff;
+    font: 400 clamp(38px, 3.5vw, 54px)/1.05 Georgia, "Times New Roman", serif;
+    letter-spacing: -0.035em;
   }
-  .home-guidance-card h3{
-    max-width:350px;
-    margin:0 0 24px;
-    color:#10252e;
-    font:400 clamp(27px,2.35vw,36px)/1.2 Georgia,'Times New Roman',serif;
-    letter-spacing:-.025em;
+  .home-guidance-panel p {
+    margin: 0 0 28px;
+    color: #dce8eb;
+    font: 400 16px/1.75 Arial, Helvetica, sans-serif;
+    max-width: 30ch;
   }
-  .home-guidance-card p{margin:0;color:#43545a;font:400 16px/1.75 Arial,Helvetica,sans-serif}
-  .home-guidance-card .home-guidance-card-detail{
-    margin-top:24px;
-    color:#254659;
-    font-weight:600;
+  .home-guidance-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 48px;
+    margin-top: auto;
+    padding: 0 20px;
+    border-radius: 999px;
+    background: #e49049;
+    color: #10252e;
+    text-decoration: none;
+    font: 700 14px/1 Arial, Helvetica, sans-serif;
   }
-  .home-guidance-link{
-    display:table;
-    margin:clamp(27px,3vw,42px) auto 0;
-    color:#254659;
-    font:700 14px/1.5 Arial,Helvetica,sans-serif;
-    text-underline-offset:5px;
+  .home-guidance-button:hover {
+    text-decoration: none;
+    background: #efa762;
   }
-  .home-guidance-link:hover{color:#10252e}
-  @media(max-width:1000px){
-    .home-guidance-inner{width:88%}
-    .home-guidance-cards{grid-template-columns:1fr;max-width:710px;margin:0 auto}
-    .home-guidance-card{padding:34px 38px}
-    .home-guidance-card h3{max-width:none;margin-bottom:16px}
-    .home-guidance-card .home-guidance-card-detail{margin-top:15px}
+  .home-guidance-process {
+    display: grid;
+    gap: 22px;
+    padding: 8px 0;
   }
-  @media(max-width:620px){
-    .home-guidance{padding:70px 0 82px}
-    .home-guidance-inner{width:86%}
-    .home-guidance-heading{margin-bottom:35px}
-    .home-guidance-heading h2{font-size:clamp(42px,9vw,57px)}
-    .home-guidance-card{padding:27px}
-    .home-guidance-card h3{font-size:29px}
-    .home-guidance-card p{font-size:15px}
+  .home-guidance-step h3 {
+    margin: 0 0 8px;
+    color: #10252e;
+    font: 400 clamp(24px, 2vw, 31px)/1.2 Georgia, "Times New Roman", serif;
+    letter-spacing: -0.02em;
+  }
+  .home-guidance-step p {
+    margin: 0;
+    color: #43545a;
+    font: 400 15px/1.72 Arial, Helvetica, sans-serif;
+    max-width: 62ch;
+  }
+  .home-guidance-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(18px, 2vw, 24px);
+    margin-top: clamp(24px, 3vw, 32px);
+  }
+  .home-guidance-info {
+    background: #eef2f4;
+    border-radius: 14px;
+    padding: clamp(24px, 2.4vw, 34px);
+  }
+  .home-guidance-info h3 {
+    margin: 0 0 12px;
+    color: #10252e;
+    font: 400 clamp(24px, 2vw, 30px)/1.2 Georgia, "Times New Roman", serif;
+    letter-spacing: -0.02em;
+  }
+  .home-guidance-info p {
+    margin: 0;
+    color: #43545a;
+    font: 400 15px/1.72 Arial, Helvetica, sans-serif;
+  }
+  @media (max-width: 900px) {
+    .home-guidance-top { grid-template-columns: 1fr; }
+    .home-guidance-bottom { grid-template-columns: 1fr; }
+    .home-guidance-panel p, .home-guidance-step p { max-width: none; }
+  }
+  @media (max-width: 620px) {
+    .home-guidance { padding: 70px 0 84px; }
+    .home-guidance-inner { width: 86%; }
+    .home-guidance-panel { border-radius: 28px 0 28px 0; padding: 28px; }
   }
 </style>
