@@ -1,4 +1,5 @@
 ---
+import ArrowIcon from '../components/ArrowIcon.astro';
 import ContentPageLayout from '../layouts/ContentPageLayout.astro';
 import { expertise } from '../data/site';
 ---
@@ -16,7 +17,7 @@ import { expertise } from '../data/site';
           <h2>{item.title}</h2>
           <p>{item.summary}</p>
         </div>
-        <span class="reports-card__link">Read more <span aria-hidden="true">↗</span></span>
+        <span class="reports-card__link">Read more <span aria-hidden="true"><ArrowIcon /></span></span>
       </a>
     ))}
   </div>
