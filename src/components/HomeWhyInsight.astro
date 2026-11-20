@@ -16,8 +16,8 @@
     isolation: isolate;
     overflow: hidden;
     width: 100%;
-    padding: clamp(64px, 5vw, 92px) 0 clamp(70px, 5.5vw, 105px);
-    background: linear-gradient(115deg, #254659 0%, #203f51 58%, #193746 100%);
+    padding: clamp(40px, 4vw, 61px) 0 clamp(43px, 4.5vw, 68px);
+    background: linear-gradient(115deg, #234255 0%, #203e50 58%, #234255 100%);
     color: #f6f8f7;
   }
   .why-insight-section::before {
@@ -38,11 +38,11 @@
     margin-inline: auto;
   }
   .why-insight-section h2 {
-    margin: 0 0 clamp(35px, 4vw, 56px);
+    margin: 0 0 clamp(22px, 3vw, 35px);
     color: #f6f8f7;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: clamp(36px, 4.2vw, 60px);
+    font-family: var(--sans);
+    font-size: clamp(28px, 3vw, 43px);
     font-weight: 700;
     line-height: 1.12;
     letter-spacing: -.045em;
@@ -62,7 +62,7 @@
     min-width: 0;
     gap: 17px;
     color: #f6f8f7;
-    font: 400 clamp(15px, 1.15vw, 18px)/1.55 Arial, Helvetica, sans-serif;
+    font: 400 clamp(15px, 1.15vw, 18px)/1.55 var(--sans);
   }
   .why-insight-tick {
     display: grid;
@@ -73,7 +73,7 @@
     border: 1px solid rgba(255,255,255,.85);
     border-radius: 50%;
     color: #fff;
-    font: 400 23px/1 Arial, Helvetica, sans-serif;
+    font: 400 23px/1 var(--sans);
   }
   @media (max-width: 920px) {
     .why-insight-points {
