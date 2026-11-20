@@ -3,7 +3,7 @@ name: Validate Astro site
 on:
   pull_request:
   push:
-    branches: [main, 'codex/**']
+    branches: [main, staging, 'codex/**']
 
 jobs:
   build:
