@@ -1,12 +1,14 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import ContentPageLayout from '../layouts/ContentPageLayout.astro';
 import { site } from '../data/site';
 ---
-<BaseLayout title="Terms of engagement | Insight Medicolegal" description="How psychiatric expert witness instructions are considered and agreed.">
-  <section class="inner-page">
-    <div class="container legal-content">
-      <h1>Terms of engagement</h1>
-      <p class="page-lead">How a psychiatric expert report is arranged.</p>
+<ContentPageLayout
+  title="Terms of engagement | Insight Medicolegal"
+  description="How psychiatric expert witness instructions are considered and agreed."
+  heading="Terms of engagement"
+  lead="How a psychiatric expert report is arranged."
+>
+  <div class="legal-content">
       <p class="small-print">Updated 2 November 2026.</p>
       <p>This page explains the usual approach to instructions. <strong>It is not a quotation or a contract on its own.</strong> The written terms agreed for each case set out the work, fees, payment terms and any cancellation or court attendance charges. If agreed written terms differ from this general information, the written terms apply.</p>
 
@@ -40,6 +42,5 @@ import { site } from '../data/site';
       <h2>Questions?</h2>
       <p>Contact <a href={'mailto:' + site.email}>{site.email}</a> or <a href={site.phoneHref}>{site.phone}</a> before sending an instruction.</p>
       <a class="button button-dark" href="/contact">Contact the practice ↗</a>
-    </div>
-  </section>
-</BaseLayout>
+  </div>
+</ContentPageLayout>
