@@ -49,3 +49,10 @@ Pending. For each significant change, record date, files changed, reason, actual
 - Preserved approved content and professional restrictions; retained all report links and contact targets. Added four-column reports index with two-column tablet and one-column mobile states.
 - Source verification: fetched changed files back from GitHub and checked common layout usage, CSS selectors, import order and route templates.
 - **Checks not executed:** npm install, Astro check/build, browser/mobile visual QA and Cloudflare deployment verification. These need a build-capable runtime or deployment preview.
+
+## Mobile visual QA and arrow corrections — 20 November 2026
+- Replaced every inline font-dependent northeast arrow glyph in active pages and components with the shared `ArrowIcon.astro` SVG icon; also replaced the homepage benefit tick characters with CSS-drawn checks.
+- Added `src/styles/mobile-polish.css` to control icon alignment, mobile navigation label, stacked centred credentials, full-width report cards, process CTA and responsive footer spacing.
+- Added `scripts/mobile-layout-smoke.mjs` and a GitHub Actions step using a real headless Chrome viewport; captures five 390px mobile screenshots as workflow artifacts.
+- **Verification passed:** GitHub Actions run https://github.com/joshfrasershaw/insightmedicolegal/actions/runs/44749086872. Astro check, build and consent checks passed. Browser check passed **21 page-width combinations at 320px, 390px and 768px**, with no horizontal overflow, offscreen primary content or mis-stacked mobile credentials.
+- Inspected generated 390px screenshots for homepage, reports index, About, How it works and Contact. Arrow icons, responsive layout and main CTAs appear correctly aligned. Actual Cloudflare preview refresh is still dependent on deployment; GitHub source and CI are verified.
