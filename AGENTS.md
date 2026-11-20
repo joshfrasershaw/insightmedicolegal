@@ -41,6 +41,16 @@ Implement the complete website end-to-end: visual reproduction, every route, sha
 - Treat the published terms as general information; individual written terms govern each accepted instruction.
 - Do not invent retention periods, fee schedules, security features or international transfer facts.
 
+## Current approved internal-page system — 20 November 2026
+This newer client instruction supersedes the older page-specific Webflow section framing for non-home content pages.
+
+- Build every new content, location, report, contact, About, instructions and legal page through `src/layouts/ContentPageLayout.astro`. Do not duplicate the shared hero or CTA in individual pages.
+- Standard page sequence: dark navy hero with a clear title and short subtitle; white editorial content section with navy/cream/light-blue details and orange primary enquiry CTA as appropriate; shared dark navy "Let's talk" section; existing shared footer.
+- Reuse styles from `src/styles/content-pages.css`, not one-off page colour schemes. Keep the homepage separately designed.
+- Hero alignment can vary with the content (`align="left"` for the reports index), but background, text contrast, section hierarchy and overall spacing must remain consistent.
+- Use responsive card grids only where they help the content: four/two/one columns for the eight-report index, three/one for process steps, appropriate editorial layouts elsewhere.
+- Preserve approved client copy, qualifications, instructions, professional restrictions, reporting/fees wording, contact data and legal notices. Do not introduce new unsupported medical statements.
+
 ## Technical boundaries
 - Use Astro + TypeScript with STATIC output for Cloudflare Pages. Do not introduce server-side rendering or a large client-side framework without a genuine requirement.
 - Centralise tokens, data and reusable components. No giant copy-and-pasted page components.
