@@ -1,12 +1,14 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import ContentPageLayout from '../layouts/ContentPageLayout.astro';
 import { site } from '../data/site';
 ---
-<BaseLayout title="Privacy notice | Insight Medicolegal" description="How Insight Medicolegal Ltd handles enquiries, psychiatric assessments and medico-legal records.">
-  <section class="inner-page">
-    <div class="container legal-content privacy-notice">
-      <h1>Privacy notice</h1>
-      <p class="page-lead">What information we collect, why we need it, and your rights.</p>
+<ContentPageLayout
+  title="Privacy notice | Insight Medicolegal"
+  description="How Insight Medicolegal Ltd handles enquiries, psychiatric assessments and medico-legal records."
+  heading="Privacy notice"
+  lead="What information we collect, why we need it, and your rights."
+>
+  <div class="legal-content privacy-notice">
       <p class="small-print">Updated 2 November 2026.</p>
 
       <h2>Who is responsible for your information?</h2>
@@ -69,6 +71,5 @@ import { site } from '../data/site';
 
       <h2>Website cookies and storage</h2>
       <p>See our <a href="/cookie-policy">cookie policy</a> for necessary site storage, external image requests and how to change cookie settings.</p>
-    </div>
-  </section>
-</BaseLayout>
+  </div>
+</ContentPageLayout>
