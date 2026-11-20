@@ -7,36 +7,33 @@ const legalNav = [
   { href: '/accessibility', label: 'Accessibility' },
 ];
 ---
-<footer class="site-footer site-footer--plain" aria-label="Contact and site information">
+<footer class="site-footer site-footer--plain" aria-label="Site information">
   <div class="site-footer__inner">
-    <section class="site-footer__cta" aria-labelledby="footer-cta-heading">
-      <h2 id="footer-cta-heading">Need a report?</h2>
-      <p>Email or call Dr Qureshi with a short outline of the case. If you have a deadline, mention it.</p>
-      <div class="site-footer__actions">
-        <a class="button button-light" href={'mailto:' + site.email}>Email Dr Qureshi ↗</a>
-        <a class="site-footer__phone" href={site.phoneHref}>Call {site.phone} ↗</a>
+    <div class="site-footer__top">
+      <div class="site-footer__brand">
+        <a href="/" class="site-footer__wordmark" aria-label="Insight Medicolegal home">INSIGHT <span>MEDICOLEGAL</span></a>
+        <p class="site-footer__descriptor">Dr Yameen Qureshi · Consultant psychiatrist, Glasgow.</p>
       </div>
-      <p class="site-footer__confidentiality">Don't send medical records until you've agreed a secure way to send them.</p>
-    </section>
-    <div class="site-footer__details">
-      <a href="/" class="site-footer__wordmark" aria-label="Insight Medicolegal home">INSIGHT <span>MEDICOLEGAL</span></a>
-      <p class="site-footer__descriptor">Dr Yameen Qureshi · Consultant psychiatrist, Glasgow.</p>
-      <div class="site-footer__navigation">
-        <nav aria-label="Footer navigation">
-          <h3>Pages</h3>
+      <nav class="site-footer__pages" aria-label="Footer navigation">
+        <h2>Explore</h2>
+        <div class="site-footer__links">
           <a href="/">Home</a>
           {mainNav.map(item => <a href={item.href}>{item.label}</a>)}
           <a href="/glasgow">Glasgow</a>
           <a href="/edinburgh">Edinburgh</a>
-        </nav>
-        <nav aria-label="Legal links">
-          <h3>Legal</h3>
+        </div>
+      </nav>
+      <nav class="site-footer__policies" aria-label="Legal links">
+        <h2>Information</h2>
+        <div class="site-footer__links">
           {legalNav.map(item => <a href={item.href}>{item.label}</a>)}
           <button class="site-footer__cookie-settings" type="button" data-cookie-open>Cookie settings</button>
-        </nav>
-      </div>
-      <p class="site-footer__legal">© {new Date().getFullYear()} {site.legalName} · Registered in Scotland {site.companyNumber}<span class="site-footer__legal-break"> · </span>{site.registeredOffice}<span class="site-footer__legal-break"> · </span>GMC {site.gmc}.</p>
-      <p class="site-footer__credit">Website by <a href={site.developerUrl} rel="noopener noreferrer">{site.developerName}</a>.</p>
+        </div>
+      </nav>
+    </div>
+    <div class="site-footer__bottom">
+      <p>© {new Date().getFullYear()} {site.legalName} · Registered in Scotland {site.companyNumber} · GMC {site.gmc} · {site.registeredOffice}</p>
+      <p>Website by <a href={site.developerUrl} rel="noopener noreferrer">{site.developerName}</a>.</p>
     </div>
   </div>
 </footer>
