@@ -1,13 +1,14 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import ContentPageLayout from '../layouts/ContentPageLayout.astro';
 import { site } from '../data/site';
 ---
-<BaseLayout title="Accessibility | Insight Medicolegal" description="Help using the Insight Medicolegal website.">
-  <section class="inner-page">
-    <div class="container legal-content">
-      <h1>Accessibility</h1>
-      <p class="page-lead">If you have trouble using this website, tell us.</p>
+<ContentPageLayout
+  title="Accessibility | Insight Medicolegal"
+  description="Help using the Insight Medicolegal website."
+  heading="Accessibility"
+  lead="If you have trouble using this website, tell us."
+>
+  <div class="legal-content">
       <p>We can help you find the information you need. Email <a href={'mailto:' + site.email}>{site.email}</a> or call <a href={site.phoneHref}>{site.phone}</a>.</p>
-    </div>
-  </section>
-</BaseLayout>
+  </div>
+</ContentPageLayout>
