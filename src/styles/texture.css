@@ -61,10 +61,7 @@
   }
 }
 .credentials-strip{background:#ececea;background-image:none}
-.expertise-section{
-  background-color:#f2f3f0;
-  background-image:none;
-}
+/* Report section background and card states are controlled by home.css. */
 /* Report card interaction is controlled by home.css; avoid a competing hover override. */
 .faq-section{background:#f2f3f0;background-image:none}
 .inner-page{
