@@ -1,32 +1,32 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import ContentPageLayout from '../layouts/ContentPageLayout.astro';
 ---
-<BaseLayout title="Dr Yameen Qureshi | Insight Medicolegal" description="Dr Yameen Qureshi is a consultant psychiatrist based in Glasgow.">
-  <section class="inner-page about-page">
-    <div class="container">
-      <header class="page-head about-page__header">
-        <h1>Dr Yameen Qureshi</h1>
-        <p class="page-lead">Consultant psychiatrist, Glasgow.</p>
-      </header>
-      <div class="about-page__body">
-        <section class="about-page__section" aria-labelledby="clinical-background">
-          <h2 id="clinical-background">Background</h2>
-          <p>Dr Qureshi is a senior Consultant Psychiatrist with over two decades of clinical experience in general adult and addiction psychiatry, having held substantive NHS consultant appointments since 2010.</p>
-          <p>He has an established medicolegal practice and is regularly instructed by leading pursuer and defender law firms in personal injury, clinical negligence, regulatory, employment and other complex litigation matters.</p>
-          <p>His expertise encompasses psychiatric diagnosis, causation, prognosis and the assessment of functional impairment. He provides independent, evidence-based opinions, drawing upon his extensive clinical experience and a thorough understanding of the requirements of medicolegal practice.</p>
-        </section>
-        <section class="about-page__section" aria-labelledby="qualifications-experience">
-          <h2 id="qualifications-experience">Qualifications</h2>
-          <p>MBBS · MRCPsych · MSc in Alcohol and Drug Addiction · FRCPsych.</p>
-          <p>He also holds expert witness accreditation from the Universities of Aberdeen and Cardiff.</p>
-          <p>GMC number: 4771627.</p>
-        </section>
-        <section class="about-page__section" aria-labelledby="independent-opinion">
-          <h2 id="independent-opinion">Expert reports</h2>
-          <p>He prepares psychiatric reports for legal cases, insurers and professional regulators.</p>
-          <a class="button button-dark" href="/contact">Ask about a report ↗</a>
-        </section>
+<ContentPageLayout
+  title="Dr Yameen Qureshi | Insight Medicolegal"
+  description="Dr Yameen Qureshi is a consultant psychiatrist based in Glasgow."
+  heading="Dr Yameen Qureshi"
+  lead="Consultant psychiatrist, Glasgow."
+>
+  <div class="about-feature">
+    <div class="about-feature__copy">
+      <h2>Professional background</h2>
+      <p>Dr Qureshi is a senior Consultant Psychiatrist with over two decades of clinical experience in general adult and addiction psychiatry, having held substantive NHS consultant appointments since 2010.</p>
+      <p>He has an established medicolegal practice and is regularly instructed by leading pursuer and defender law firms in personal injury, clinical negligence, regulatory, employment and other complex litigation matters.</p>
+      <p>His expertise encompasses psychiatric diagnosis, causation, prognosis and the assessment of functional impairment. He provides independent, evidence-based opinions, drawing upon his extensive clinical experience and a thorough understanding of the requirements of medicolegal practice.</p>
+      <div class="content-page-actions">
+        <a class="button content-page-button--accent" href="/contact">Ask about a report ↗</a>
+        <a class="button button-dark" href="/areas-of-expertise">Types of reports ↗</a>
       </div>
     </div>
-  </section>
-</BaseLayout>
+    <aside class="about-feature__qualifications" aria-labelledby="about-qualifications">
+      <h2 id="about-qualifications">Qualifications</h2>
+      <p>MBBS · MRCPsych · MSc in Alcohol and Drug Addiction · FRCPsych.</p>
+      <p>He also holds expert witness accreditation from the Universities of Aberdeen and Cardiff.</p>
+      <p>GMC number: 4771627.</p>
+    </aside>
+  </div>
+  <div class="about-feature__note content-page-note">
+    <h2>Expert reports</h2>
+    <p>He prepares psychiatric reports for legal cases, insurers and professional regulators.</p>
+  </div>
+</ContentPageLayout>
