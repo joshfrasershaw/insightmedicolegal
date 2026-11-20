@@ -1,4 +1,5 @@
 ---
+import ArrowIcon from '../components/ArrowIcon.astro';
 import ContentPageLayout from '../layouts/ContentPageLayout.astro';
 import { site } from '../data/site';
 ---
@@ -41,6 +42,6 @@ import { site } from '../data/site';
 
       <h2>Questions?</h2>
       <p>Contact <a href={'mailto:' + site.email}>{site.email}</a> or <a href={site.phoneHref}>{site.phone}</a> before sending an instruction.</p>
-      <a class="button button-dark" href="/contact">Contact the practice ↗</a>
+      <a class="button button-dark" href="/contact">Contact the practice <ArrowIcon /></a>
   </div>
 </ContentPageLayout>
