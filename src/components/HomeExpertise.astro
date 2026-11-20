@@ -1,20 +1,32 @@
 ---
 import { expertise } from '../data/site';
+
+// Six focused entry points on the homepage. All eight subjects remain available
+// through the full expertise index, including chronic pain and personality disorders.
+const featuredSlugs = [
+  'post-traumatic-stress-disorder',
+  'anxiety-depression',
+  'addiction-psychiatry',
+  'personal-injury-clinical-negligence',
+  'employment-occupational-matters',
+  'professional-regulation'
+];
+const featuredReports = featuredSlugs.map(slug => expertise.find(item => item.slug === slug)).filter((item): item is (typeof expertise)[number] => item !== undefined);
 ---
 <section class="section expertise-section" aria-labelledby="expertise-title">
   <div class="container">
-    <h2 id="expertise-title" class="visually-hidden">Types of reports</h2>
+    <h2 id="expertise-title">Types of reports</h2>
     <div class="expertise-list">
-      {expertise.map((item, i) => (
+      {featuredReports.map(item => (
         <a class="expertise-item" href={'/' + item.slug}>
-          <span class="expertise-number">{String(i + 1).padStart(2, '0')}</span>
-          <div>
+          <div class="expertise-item-copy">
             <h3>{item.title}</h3>
             <p>{item.summary}</p>
-            <span class="expertise-arrow">Read more ↗</span>
           </div>
+          <span class="expertise-arrow" aria-hidden="true">↗</span>
         </a>
       ))}
     </div>
+    <a class="expertise-all-link" href="/areas-of-expertise">View all areas of expertise ↗</a>
   </div>
 </section>
