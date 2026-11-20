@@ -1,12 +1,14 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import ContentPageLayout from '../layouts/ContentPageLayout.astro';
 import { site } from '../data/site';
 ---
-<BaseLayout title="Cookie policy | Insight Medicolegal" description="What site storage is used, how optional cookies are controlled, and how to change your choice.">
-  <section class="inner-page">
-    <div class="container legal-content">
-      <h1>Cookie policy</h1>
-      <p class="page-lead">The site uses a small amount of necessary browser storage. No analytics or advertising trackers are currently installed.</p>
+<ContentPageLayout
+  title="Cookie policy | Insight Medicolegal"
+  description="What site storage is used, how optional cookies are controlled, and how to change your choice."
+  heading="Cookie policy"
+  lead="The site uses a small amount of necessary browser storage. No analytics or advertising trackers are currently installed."
+>
+  <div class="legal-content">
       <p class="small-print">Updated 2 November 2026.</p>
 
       <h2>What are cookies and similar technologies?</h2>
@@ -33,6 +35,5 @@ import { site } from '../data/site';
       <h2>If the site changes</h2>
       <p>If analytics, advertising or other optional services are added, the site must explain what each tool does, identify the provider and ask for a new choice <strong>before</strong> loading it. A choice made today is not permission for undisclosed future tracking.</p>
       <p>Questions? Email <a href={'mailto:' + site.email}>{site.email}</a>.</p>
-    </div>
-  </section>
-</BaseLayout>
+  </div>
+</ContentPageLayout>
