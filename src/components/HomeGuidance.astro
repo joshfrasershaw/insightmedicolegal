@@ -60,7 +60,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background: #254659;
+    background: var(--navy);
     color: #f7f8f7;
     padding: clamp(34px, 3.2vw, 48px);
     border-radius: 46px 0 46px 0;
@@ -68,13 +68,13 @@
   .home-guidance-panel h2 {
     margin: 0 0 22px;
     color: #ffffff;
-    font: 400 clamp(38px, 3.5vw, 54px)/1.05 Georgia, "Times New Roman", serif;
+    font: 400 clamp(38px, 3.5vw, 54px)/1.05 var(--serif);
     letter-spacing: -0.035em;
   }
   .home-guidance-panel p {
     margin: 0 0 28px;
     color: #dce8eb;
-    font: 400 16px/1.75 Arial, Helvetica, sans-serif;
+    font: 400 16px/1.75 var(--sans);
     max-width: 30ch;
   }
   .home-guidance-button {
@@ -86,14 +86,14 @@
     margin-top: auto;
     padding: 0 20px;
     border-radius: 999px;
-    background: #e49049;
+    background: var(--cta);
     color: #10252e;
     text-decoration: none;
-    font: 700 14px/1 Arial, Helvetica, sans-serif;
+    font: 700 14px/1 var(--sans);
   }
   .home-guidance-button:hover {
     text-decoration: none;
-    background: #efa762;
+    background: #ffd083;
   }
   .home-guidance-process {
     display: grid;
@@ -103,13 +103,13 @@
   .home-guidance-step h3 {
     margin: 0 0 8px;
     color: #10252e;
-    font: 400 clamp(24px, 2vw, 31px)/1.2 Georgia, "Times New Roman", serif;
+    font: 400 clamp(24px, 2vw, 31px)/1.2 var(--serif);
     letter-spacing: -0.02em;
   }
   .home-guidance-step p {
     margin: 0;
     color: #43545a;
-    font: 400 15px/1.72 Arial, Helvetica, sans-serif;
+    font: 400 15px/1.72 var(--sans);
     max-width: 62ch;
   }
   .home-guidance-bottom {
@@ -119,20 +119,20 @@
     margin-top: clamp(24px, 3vw, 32px);
   }
   .home-guidance-info {
-    background: #eef2f4;
+    background: var(--light-blue);
     border-radius: 14px;
     padding: clamp(24px, 2.4vw, 34px);
   }
   .home-guidance-info h3 {
     margin: 0 0 12px;
     color: #10252e;
-    font: 400 clamp(24px, 2vw, 30px)/1.2 Georgia, "Times New Roman", serif;
+    font: 400 clamp(24px, 2vw, 30px)/1.2 var(--serif);
     letter-spacing: -0.02em;
   }
   .home-guidance-info p {
     margin: 0;
     color: #43545a;
-    font: 400 15px/1.72 Arial, Helvetica, sans-serif;
+    font: 400 15px/1.72 var(--sans);
   }
   @media (max-width: 900px) {
     .home-guidance-top { grid-template-columns: 1fr; }
