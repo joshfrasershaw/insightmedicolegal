@@ -1,0 +1,70 @@
+<section class="home-guidance" aria-labelledby="home-guidance-title">
+  <div class="home-guidance-inner">
+    <div class="home-guidance-heading">
+      <h2 id="home-guidance-title">Clear from the outset.</h2>
+      <p>A straightforward way to discuss an instruction.</p>
+    </div>
+    <ul class="home-guidance-points">
+      <li>Start with a short enquiry about the case.</li>
+      <li>Discuss fees, timing and what is needed.</li>
+      <li>Agree secure transfer before sending medical records.</li>
+    </ul>
+  </div>
+</section>
+
+<style>
+  .home-guidance {
+    background: #f2f3f0;
+    color: #10252e;
+    padding: clamp(62px, 6vw, 92px) 0;
+  }
+  .home-guidance-inner {
+    width: min(88%, 1370px);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+    gap: clamp(30px, 5vw, 95px);
+    align-items: center;
+  }
+  .home-guidance h2 {
+    color: #10252e;
+    font: 400 clamp(37px, 3.7vw, 57px)/1.12 Georgia, 'Times New Roman', serif;
+    letter-spacing: -.035em;
+    margin: 0 0 17px;
+  }
+  .home-guidance-heading p {
+    color: #43545a;
+    font: 400 16px/1.7 Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  .home-guidance-points {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+  }
+  .home-guidance-points li {
+    position: relative;
+    color: #254659;
+    padding: 15px 5px 15px 28px;
+    border-bottom: 1px solid #d1d9d8;
+    font: 400 clamp(16px, 1.2vw, 18px)/1.55 Arial, Helvetica, sans-serif;
+  }
+  .home-guidance-points li:first-child { border-top: 1px solid #d1d9d8; }
+  .home-guidance-points li::before {
+    content: "";
+    position: absolute;
+    top: 26px;
+    left: 5px;
+    width: 7px;
+    height: 7px;
+    background: #254659;
+    border-radius: 50%;
+  }
+  @media (max-width: 760px) {
+    .home-guidance-inner { width: 86%; grid-template-columns: 1fr; gap: 27px; }
+    .home-guidance h2 { font-size: clamp(36px, 8vw, 48px); }
+  }
+</style>
